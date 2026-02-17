@@ -1,0 +1,12 @@
+digraph "ViewModel.NuevoClienteViewModel.Cancelar"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.NuevoClienteView\lModel.Cancelar",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cancela la operación y cierra la ventana sin guardar."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.NuevoClienteView\lModel.NuevoClienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_cliente_view_model.html#a564fda5476080785d9c91a63d0713a80",tooltip="Constructor que inicializa el servicio y los comandos."];
+}

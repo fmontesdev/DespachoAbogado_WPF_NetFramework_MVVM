@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['pantalla_0',['📸 Capturas de Pantalla',['../index.html#autotoc_md59',1,'']]],
+  ['patrondni_1',['PatronDni',['../class_view_model_1_1_validadores_1_1_cliente_validador.html#a4dbb7f6a57a0748510b291377294fda7',1,'ViewModel::Validadores::ClienteValidador']]],
+  ['patronemail_2',['PatronEmail',['../class_view_model_1_1_validadores_1_1_cliente_validador.html#ae9381d2d74e9b4771bb51a0e90f4b8ce',1,'ViewModel::Validadores::ClienteValidador']]],
+  ['patrones_3',['&lt;b&gt;Arquitectura y Patrones&lt;/b&gt;',['../index.html#autotoc_md15',1,'']]],
+  ['patrontelefono_4',['PatronTelefono',['../class_view_model_1_1_validadores_1_1_cliente_validador.html#aac77c30730f90097fec0a7813eecb8be',1,'ViewModel::Validadores::ClienteValidador']]],
+  ['placeholderexpediente_5',['PlaceholderExpediente',['../class_view_model_1_1_nueva_cita_view_model.html#ad6a39f53d4adabdb604021686ae024c1',1,'ViewModel::NuevaCitaViewModel']]],
+  ['poblacion_6',['Poblacion',['../class_model_1_1_cliente.html#af24b0a9860d2df256ef3968bfb6eec5a',1,'Model.Cliente.Poblacion'],['../class_view_model_1_1_cliente_view_model.html#a4bfdcb3985f8325e9aa82b17d6d899b7',1,'ViewModel.ClienteViewModel.Poblacion'],['../class_view_model_1_1_nuevo_cliente_view_model.html#a29d5bcbbaaed3b294333d9c91e752ae3',1,'ViewModel.NuevoClienteViewModel.Poblacion']]],
+  ['previos_7',['✅ Requisitos Previos',['../index.html#autotoc_md24',1,'']]],
+  ['primer_20uso_8',['&lt;b&gt;Primer Uso&lt;/b&gt;',['../index.html#autotoc_md38',1,'']]],
+  ['principal_20vista_20de_20citas_9',['&lt;b&gt;Ventana Principal - Vista de Citas&lt;/b&gt;',['../index.html#autotoc_md60',1,'']]],
+  ['principales_10',['✨ Características Principales',['../index.html#autotoc_md6',1,'']]],
+  ['propertychanged_11',['PropertyChanged',['../class_view_model_1_1_actuacion_view_model.html#a728620c1240f00c0fc16f77d99628b04',1,'ViewModel.ActuacionViewModel.PropertyChanged'],['../class_view_model_1_1_cita_view_model.html#ab4bc34b6c08fe37c8d82aeae7e9b1c8f',1,'ViewModel.CitaViewModel.PropertyChanged'],['../class_view_model_1_1_cliente_view_model.html#ad0cda556333f183bd56a3e9337d9b31e',1,'ViewModel.ClienteViewModel.PropertyChanged'],['../class_view_model_1_1_expediente_view_model.html#abf80a3c6ad4407c05e8f5fd13d40d7b4',1,'ViewModel.ExpedienteViewModel.PropertyChanged'],['../class_view_model_1_1_informe_view_model.html#a2ce9af434d0e467e9eda6a54113ae2b0',1,'ViewModel.InformeViewModel.PropertyChanged'],['../class_view_model_1_1_main_view_model.html#a4e8e19dfedd90ae0b5402e801e70b079',1,'ViewModel.MainViewModel.PropertyChanged'],['../class_view_model_1_1_nueva_actuacion_view_model.html#aa15c900fe671a9bddf502d3f94dbed2b',1,'ViewModel.NuevaActuacionViewModel.PropertyChanged'],['../class_view_model_1_1_nueva_cita_view_model.html#a6cbccd0d0bfe23bd867578cde46faace',1,'ViewModel.NuevaCitaViewModel.PropertyChanged'],['../class_view_model_1_1_nuevo_cliente_view_model.html#a9eac7d6f5a923fe705057896fc0473f3',1,'ViewModel.NuevoClienteViewModel.PropertyChanged'],['../class_view_model_1_1_nuevo_expediente_view_model.html#ad52d1a59ad87a28319bf3b383ba3d4c9',1,'ViewModel.NuevoExpedienteViewModel.PropertyChanged']]],
+  ['proyecto_12',['📖 Descripción del Proyecto',['../index.html#autotoc_md4',1,'']]],
+  ['proyecto_20¡dale_20una_20estrella_20en_20github_20⭐_13',['⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub! ⭐',['../index.html#autotoc_md71',1,'']]]
+];

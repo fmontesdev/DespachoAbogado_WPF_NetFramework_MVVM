@@ -1,0 +1,14 @@
+digraph "ViewModel.Services.ClienteService.ActualizarClienteAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.Services.Cliente\lService.ActualizarClienteAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Actualiza los datos de un cliente existente después de validar las reglas de negocio."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Services.Cliente\lService.ValidarDniUnicoAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#acbdfb1bba0eee3dcba877d9a82e4db87",tooltip="Valida que el DNI sea único en la base de datos."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.Services.Cliente\lService.ValidarEmailUnicoAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#a89a73de239a890531ee54e5984fb190a",tooltip="Valida que el Email sea único en la base de datos."];
+}

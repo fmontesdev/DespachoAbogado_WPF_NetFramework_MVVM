@@ -1,0 +1,228 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Despacho de Abogados"
+        Width="1100"
+        Height="775"
+        Background="#FFF0F0F0"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <!-- Estilo de botón del panel lateral con selección -->
+        <Style x:Key="SidebarRadioButton" TargetType="RadioButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Padding" Value="15,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="GroupName" Value="MenuButtons"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                Padding="{TemplateBinding Padding}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Icono (emoji o símbolo) -->
+                                <TextBlock Grid.Column="0"
+                                         Text="{TemplateBinding Tag}"
+                                         FontSize="16"
+                                         VerticalAlignment="Center"
+                                         Foreground="{TemplateBinding Foreground}"
+                                         Margin="0,0,12,0"/>
+
+                                <!-- Texto -->
+                                <TextBlock Grid.Column="1"
+                                         Text="{TemplateBinding Content}"
+                                         FontSize="{TemplateBinding FontSize}"
+                                         VerticalAlignment="Center"
+                                         Foreground="{TemplateBinding Foreground}"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="White" Opacity="0.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <!-- Seleccionado -->
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#4D9FFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Estilo de botón del panel lateral sin selección -->
+        <Style x:Key="SidebarButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Padding" Value="15,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                Padding="{TemplateBinding Padding}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0"
+                                         Text="{TemplateBinding Tag}"
+                                         FontSize="16"
+                                         VerticalAlignment="Center"
+                                         Foreground="{TemplateBinding Foreground}"
+                                         Margin="0,0,12,0"/>
+
+                                <TextBlock Grid.Column="1"
+                                         Text="{TemplateBinding Content}"
+                                         FontSize="{TemplateBinding FontSize}"
+                                         VerticalAlignment="Center"
+                                         Foreground="{TemplateBinding Foreground}"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="White" Opacity="0.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <!-- Presionado -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="White" Opacity="0.15"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <DockPanel LastChildFill="True">
+
+            <!-- PANEL LATERAL IZQUIERDO -->
+            <Border DockPanel.Dock="Left"
+                    Width="190"
+                    Background="#1E3A52">
+
+                <StackPanel VerticalAlignment="Top">
+
+                    <!-- Logo/Título -->
+                    <StackPanel Orientation="Horizontal" 
+                               Margin="15,10,0,13">
+                        <TextBlock Text="⚖️" 
+                                  FontSize="18" 
+                                  Foreground="#4D9FFF"
+                                  VerticalAlignment="Center"
+                                  Margin="0,0,13,0"/>
+                        <TextBlock Text="D.Abogados" 
+                                  FontSize="18" 
+                                  FontWeight="Bold"
+                                  Foreground="White"
+                                  VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <Separator Margin="0,0,0,15" 
+                              Background="#2E5670" 
+                              Height="1"/>
+
+                    <!-- Botones del menú -->
+                    <RadioButton x:Name="rbCitas" Content="Citas"
+                                Tag="📅"
+                                Style="{StaticResource SidebarRadioButton}"
+                                Command="{Binding MostrarCitasCommand}"
+                                IsChecked="True"/>                    
+                    
+                    <RadioButton x:Name="rbClientes" Content="Clientes"
+                                Tag="👥"
+                                Style="{StaticResource SidebarRadioButton}"
+                                Command="{Binding MostrarClientesCommand}"/>
+
+                    <RadioButton x:Name="rbExpedientes" Content="Expedientes"
+                                Tag="📁"
+                                Style="{StaticResource SidebarRadioButton}"
+                                Command="{Binding MostrarExpedientesCommand}"/>
+
+                    <RadioButton x:Name="rbActuaciones" Content="Actuaciones"
+                                Tag="⚖️"
+                                Style="{StaticResource SidebarRadioButton}"
+                                Command="{Binding MostrarActuacionesCommand}"/>
+
+                    <RadioButton x:Name="rbInformes" Content="Informes"
+                                Tag="📊"
+                                Style="{StaticResource SidebarRadioButton}"
+                                Command="{Binding MostrarInformesCommand}"/>
+
+                    <Separator Margin="0,15" 
+                              Background="#2E5670" 
+                              Height="1"/>
+
+                    <Button Content="Salir"
+                            Tag="🚪"
+                            Style="{StaticResource SidebarButton}"
+                            Command="{Binding SalirCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- HEADER -->
+            <Border DockPanel.Dock="Top"
+                    Background="#FFFFFF"
+                    Padding="10"
+                    BorderBrush="#E0E0E0"
+                    BorderThickness="0,0,0,1">
+
+                <TextBlock x:Name="txtTitulo"
+                           Text="{Binding Titulo}"
+                           Foreground="#3B7DB8"
+                           FontSize="21"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Border>
+
+            <!-- CONTENIDO PRINCIPAL DINÁMICO -->
+            <Border Background="Transparent" Padding="18">
+                <ContentControl x:Name="MainContent"/>
+            </Border>
+
+        </DockPanel>
+
+        <!-- Overlay oscuro para ocultar ventana principal al ejecutar un modal (inicialmente oculto) -->
+        <Border x:Name="ModalOverlay"
+                Background="#7F000000"
+                Visibility="Collapsed"
+                Panel.ZIndex="999"/>
+    </Grid>
+</Window>

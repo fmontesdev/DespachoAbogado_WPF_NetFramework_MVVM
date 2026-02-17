@@ -1,0 +1,27 @@
+var class_model_1_1_data_sets_1_1ds_expedientes_por_estado =
+[
+    [ "ExpedientesDataTable", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_data_table.html", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_data_table" ],
+    [ "ExpedientesRow", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_row.html", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_row" ],
+    [ "ExpedientesRowChangeEvent", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_row_change_event.html", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_row_change_event" ],
+    [ "dsExpedientesPorEstado", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a4887691c67ec3addfb074fa8f3865b83", null ],
+    [ "dsExpedientesPorEstado", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a84254cb0bfe1700923ea9a41162e1a0d", null ],
+    [ "Clone", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a158d292afed4eaff1ea5f74b1b361b93", null ],
+    [ "ExpedientesRowChangeEventHandler", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a46ea50d3b418f0496db419f2e5b23065", null ],
+    [ "GetSchemaSerializable", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a35010b20b7666b1b6c447f43fda207d1", null ],
+    [ "GetTypedDataSetSchema", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#aa386663f6b2530c4cfdb646622fdd2e0", null ],
+    [ "InitClass", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a88a416866101ae2f576958f8bc987ed5", null ],
+    [ "InitializeDerivedDataSet", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a41894e1c5e3059aa2f91c931c8567aa3", null ],
+    [ "InitVars", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a3bd9bf49f3dfe5e8dcf74e0048b35eaa", null ],
+    [ "InitVars", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#adad6eaf3bac17e3d1261bf6e61e012d4", null ],
+    [ "ReadXmlSerializable", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a71ff55e9f1694fb847a288701a0a7f81", null ],
+    [ "SchemaChanged", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a648c6e769b7a669aaf13c704cf211d01", null ],
+    [ "ShouldSerializeExpedientes", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a7a9bbdabfba0f31f1f6b647f7af080b4", null ],
+    [ "ShouldSerializeRelations", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#ac83464a4495eedb51bd10494a8550643", null ],
+    [ "ShouldSerializeTables", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a6d15de2b6cce9709c2dd0dd3d8574a9b", null ],
+    [ "_schemaSerializationMode", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a1253f41e6a0a785783fcb16c10fb78ea", null ],
+    [ "tableExpedientes", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#aad101605a42a63f72345e47d0400e9bc", null ],
+    [ "Expedientes", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#acde32e6f3c800b0e65d22787f62d6054", null ],
+    [ "Relations", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#abc5746048119c63f4ebb0251a5ab358e", null ],
+    [ "SchemaSerializationMode", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a257659ebea7b6361dafed256ef53cff2", null ],
+    [ "Tables", "class_model_1_1_data_sets_1_1ds_expedientes_por_estado.html#a35225f27e5d0c1fbe146b384755b41e6", null ]
+];

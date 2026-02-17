@@ -1,0 +1,26 @@
+digraph "ViewModel.ExpedienteViewModel.EditarExpediente"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.ExpedienteView\lModel.EditarExpediente",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Edita el expediente seleccionado con los datos de los campos, validando los datos y guardando los cam..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ExpedienteView\lModel.CargarExpedientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a2290d80b41117ad8955d930b64c1f9c4",tooltip="Carga la lista de expedientes desde la base de datos y actualiza la colección observable."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ExpedienteView\lModel.OnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#ac89af9c7feee236e5cc2eee56b8a720f",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ExpedienteView\lModel.MantieneSeleccion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a9cee2434ad2defe797514d4784e2ea5f",tooltip="Mantiene la selección del expediente en el índice especificado."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ExpedienteView\lModel.SeleccionarPrimero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a4e2d05112bd93006c567956c004091bd",tooltip="Selecciona el primer expediente de la lista."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.ExpedienteView\lModel.ValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a67b09178bf3d7298d628ca9b4a4f1549",tooltip="Valida los datos del formulario de edición de expedientes."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.Validadores.Expediente\lValidador.ValidarExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_expediente_validador.html#adb79c35a34281b4dc6668b6313acf285",tooltip="Valida todos los campos de un expediente existente."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Validadores.Expediente\lValidador.ValidarCamposComunesExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_expediente_validador.html#acbfcf4791381f3b4e08cd20db42885fd",tooltip="Valida los campos comunes de un expediente (título, descripción, jurisdicción y órgano)."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.Validadores.Expediente\lValidador.ValidarTitulo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_expediente_validador.html#a6879ae8d4c594213934c95ab3a9837f7",tooltip="Valida el título del expediente."];
+}

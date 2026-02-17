@@ -1,0 +1,14 @@
+digraph "Model.Mappers.EstadoExpedienteMapper.DeBDaUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Model.Mappers.EstadoExpediente\lMapper.DeBDaUI",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Convierte un valor de estado de la BD a su representación formateada para la UI."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ExpedienteView\lModel.AplicarFiltros",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a10e6a235e6bc0ff269935a9bfeebd4f9",tooltip="Aplica el filtro de búsqueda global sobre la lista completa de expedientes."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.Repositorios.Expediente\lRepositorio.ObtenerDataSetExpedientes\lPorEstadoAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_repositorios_1_1_expediente_repositorio.html#a2deeda4a91de32a1092e8ca9537e1b70",tooltip="Genera el DataSet para el informe de Expedientes por Estado."];
+}

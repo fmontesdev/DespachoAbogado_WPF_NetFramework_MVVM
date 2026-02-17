@@ -1,0 +1,27 @@
+var class_model_1_1_data_sets_1_1ds_agenda_citas =
+[
+    [ "CitasDataTable", "class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_data_table.html", "class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_data_table" ],
+    [ "CitasRow", "class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_row.html", "class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_row" ],
+    [ "CitasRowChangeEvent", "class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_row_change_event.html", "class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_row_change_event" ],
+    [ "dsAgendaCitas", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a71aa9aede379f2bdd9c24f0aeab5aba1", null ],
+    [ "dsAgendaCitas", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a0fcb3d42dd720552367ba681e82c2e3c", null ],
+    [ "CitasRowChangeEventHandler", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a09baf910aebcdcf1a664e07ec762a689", null ],
+    [ "Clone", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a06fa79a34e8d1b05b86cea0d8c0bfc90", null ],
+    [ "GetSchemaSerializable", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#af5902ebfd1fa59666207663719ea8426", null ],
+    [ "GetTypedDataSetSchema", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a57f809504e1a60c020b713f6accb27d8", null ],
+    [ "InitClass", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a22bd57e0f0d8456a15fb884314dc324c", null ],
+    [ "InitializeDerivedDataSet", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a7a0f025e52473650e71dcc8c1b88a7dd", null ],
+    [ "InitVars", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a04940499ce123c9d77f6e5fea517abbd", null ],
+    [ "InitVars", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a0f908c07254541302217f9c592a8c31b", null ],
+    [ "ReadXmlSerializable", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#aa8935aeec8c80c102c1386e2b1e9b30d", null ],
+    [ "SchemaChanged", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#abf3df657b5b102585858f92fdb10b24d", null ],
+    [ "ShouldSerializeCitas", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#aaf565e02dfb24d4a8ed299705c738790", null ],
+    [ "ShouldSerializeRelations", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a6a6f6a18514bba18c47da1bd34bc51a0", null ],
+    [ "ShouldSerializeTables", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a1d3d71354d9604315ac7f86d91fd872d", null ],
+    [ "_schemaSerializationMode", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a7c36cafe052f0d5e40a8b1320eff6ccf", null ],
+    [ "tableCitas", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#aad6dd37e3efa3fc321e9060e2a163c90", null ],
+    [ "Citas", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a0877631ec8c43cba03324a3aa6377203", null ],
+    [ "Relations", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a2ed6a29aefab56913191ab3e1d382d78", null ],
+    [ "SchemaSerializationMode", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#af23be6bcd84bdaddee90c7cccfd0b803", null ],
+    [ "Tables", "class_model_1_1_data_sets_1_1ds_agenda_citas.html#a06fbd42f810145650c1e391cf5d21227", null ]
+];

@@ -1,0 +1,10 @@
+digraph "GrÃ¡fico de jerarquÃ­a de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="ViewModel.Validadores.Actuacion\lValidador",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_actuacion_validador.html",tooltip="Clase estática que contiene métodos de validación para actuaciones."];
+}

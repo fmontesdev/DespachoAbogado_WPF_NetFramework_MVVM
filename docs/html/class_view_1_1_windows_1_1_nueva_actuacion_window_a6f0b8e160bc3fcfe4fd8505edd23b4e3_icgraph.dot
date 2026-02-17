@@ -1,0 +1,19 @@
+digraph "View.Windows.NuevaActuacionWindow.ActualizarVisibilidadPlaceholder"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="View.Windows.NuevaActuacion\lWindow.ActualizarVisibilidadPlaceholder",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Actualiza la visibilidad del placeholder según el estado del TextBox."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.Windows.NuevaActuacion\lWindow.CbExpediente_SelectionChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_actuacion_window.html#a0a8057323f4cb8211113e1351fabd4e7",tooltip="Maneja el cambio de selección en el ComboBox de Expediente."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="View.Windows.NuevaActuacion\lWindow.ComboBox_TextChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_actuacion_window.html#ab81beaedc03e94d635a23676f7dbffd7",tooltip="Maneja el cambio de texto en el ComboBox editable de Expediente."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="View.Windows.NuevaActuacion\lWindow.NuevaActuacionWindow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_actuacion_window.html#a19ea1eae21c92f1fdcf0e1cd02620f43",tooltip=" "];
+  Node1 -> Node4 [id="edge4_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="View.Windows.NuevaActuacion\lWindow.TextBox_TextChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_actuacion_window.html#aff190696bb446fd8479e7c030de63ec4",tooltip="Maneja el cambio de texto en los TextBox para actualizar placeholders."];
+}

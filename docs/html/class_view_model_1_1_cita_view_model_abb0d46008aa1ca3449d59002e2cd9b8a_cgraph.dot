@@ -1,0 +1,20 @@
+digraph "ViewModel.CitaViewModel.InicializarAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.CitaViewModel.\lInicializarAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona la primera cita."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.CitaViewModel.\lCargarCitasAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#ae96e3664d40c1b0e1ca9e6b18d4b07fe",tooltip="Carga la lista de citas desde la base de datos y actualiza la colección observable."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.CitaViewModel.\lOnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a99ad94230a4a298b14b8c112f09e9d5c",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.CitaViewModel.\lCargarClientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#abf7ee84a1cc2f94dd57751c8d0e9fb81",tooltip="Carga la lista de clientes desde la base de datos."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.CitaViewModel.\lCargarExpedientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a2f688b463a8ea53edac2331e0f2d1310",tooltip="Carga la lista de expedientes desde la base de datos."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.CitaViewModel.\lSeleccionarPrimero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#afd2a7928a522d0e1652802047b075ab0",tooltip="Selecciona la primera cita de la lista."];
+}

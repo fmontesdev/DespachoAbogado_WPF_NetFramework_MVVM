@@ -1,0 +1,46 @@
+digraph "ViewModel.CitaViewModel.CitaViewModel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.CitaViewModel.\lCitaViewModel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.CitaViewModel.\lEditarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a89f5e958916a3b32e9e514683d8cfeb8",tooltip="Edita la cita seleccionada con los datos de los campos, validando los datos y guardando los cambios e..."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.CitaViewModel.\lCargarCitasAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#ae96e3664d40c1b0e1ca9e6b18d4b07fe",tooltip="Carga la lista de citas desde la base de datos y actualiza la colección observable."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.CitaViewModel.\lOnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a99ad94230a4a298b14b8c112f09e9d5c",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.CitaViewModel.\lMantieneSeleccion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a8f6a89250da0e6523a6725b758a29f5a",tooltip="Mantiene la selección de la cita en el índice especificado."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.CitaViewModel.\lSeleccionarPrimero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#afd2a7928a522d0e1652802047b075ab0",tooltip="Selecciona la primera cita de la lista."];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.CitaViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a2185f6c7620b15e6e1125a82148e5d57",tooltip="Valida los datos del formulario de edición de citas."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Validadores.Cita\lValidador.ValidarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#af887c54237b3eddda60465cfb14da827",tooltip="Valida todos los campos de una cita existente para edición."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.Validadores.Cita\lValidador.ValidarCamposComunesCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#a2f6d65f1de83a4a86c49ca6c1aa71791",tooltip="Valida los campos comunes de una cita (fecha, horario, modalidad y motivo)."];
+  Node9 -> Node10 [id="edge9_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="ViewModel.Validadores.Cita\lValidador.ValidarFecha",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#a208ee96c55f5287b237eb8c0f13390e6",tooltip="Valida la fecha de la cita."];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="ViewModel.CitaViewModel.\lEliminarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a5b18f47818ba43759b0d1662e5d2ae52",tooltip="Solicita confirmación para eliminar la cita seleccionada."];
+  Node1 -> Node12 [id="edge11_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="ViewModel.CitaViewModel.\lInicializarAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#abb0d46008aa1ca3449d59002e2cd9b8a",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona la primera cita."];
+  Node12 -> Node3 [id="edge12_Node000012_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node12 -> Node13 [id="edge13_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="ViewModel.CitaViewModel.\lCargarClientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#abf7ee84a1cc2f94dd57751c8d0e9fb81",tooltip="Carga la lista de clientes desde la base de datos."];
+  Node12 -> Node14 [id="edge14_Node000012_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="ViewModel.CitaViewModel.\lCargarExpedientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a2f688b463a8ea53edac2331e0f2d1310",tooltip="Carga la lista de expedientes desde la base de datos."];
+  Node12 -> Node6 [id="edge15_Node000012_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node15 [id="edge16_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="ViewModel.CitaViewModel.\lLimpiarBusqueda",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a85032009ef1378d1a66e0b77a76f93e2",tooltip="Limpia el filtro de búsqueda y muestra todas las citas."];
+  Node1 -> Node16 [id="edge17_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="ViewModel.CitaViewModel.\lNuevaCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a88d68003a41668eac26d24bc00d2eb48",tooltip="Abre la ventana modal para crear una nueva cita."];
+  Node1 -> Node17 [id="edge18_Node000001_Node000017",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="Model.Mappers.ModalidadCita\lMapper.ObtenerTodas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_modalidad_cita_mapper.html#a8372f80ba43988cce456f36b87aad76c",tooltip="Obtiene todas las modalidades disponibles para UI."];
+  Node1 -> Node18 [id="edge19_Node000001_Node000018",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="Model.Mappers.EstadoCita\lMapper.ObtenerTodos",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_estado_cita_mapper.html#a9aacdaefc3f07d9e15de08483b8ba34e",tooltip="Obtiene todos los estados de cita disponibles para UI."];
+}

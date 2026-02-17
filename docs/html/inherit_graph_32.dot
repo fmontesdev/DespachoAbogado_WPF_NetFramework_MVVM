@@ -1,0 +1,10 @@
+digraph "Gráfico de jerarquía de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="ViewModel.Models.ListaInformes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_models_1_1_lista_informes.html",tooltip="Clase estática que proporciona la lista de informes disponibles en el sistema."];
+}

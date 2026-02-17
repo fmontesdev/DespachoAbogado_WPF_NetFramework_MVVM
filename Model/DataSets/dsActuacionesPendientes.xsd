@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsActuacionesPendientes" targetNamespace="http://tempuri.org/dsActuacionesPendientes.xsd" xmlns:mstns="http://tempuri.org/dsActuacionesPendientes.xsd" xmlns="http://tempuri.org/dsActuacionesPendientes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsActuacionesPendientes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsActuacionesPendientes" msprop:Generator_DataSetName="dsActuacionesPendientes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Actuaciones" msprop:Generator_RowEvHandlerName="ActuacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="ActuacionesRowDeleted" msprop:Generator_RowDeletingName="ActuacionesRowDeleting" msprop:Generator_RowEvArgName="ActuacionesRowChangeEvent" msprop:Generator_TablePropName="Actuaciones" msprop:Generator_RowChangedName="ActuacionesRowChanged" msprop:Generator_RowChangingName="ActuacionesRowChanging" msprop:Generator_TableClassName="ActuacionesDataTable" msprop:Generator_RowClassName="ActuacionesRow" msprop:Generator_TableVarName="tableActuaciones" msprop:Generator_UserTableName="Actuaciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FechaHora" msprop:Generator_ColumnPropNameInRow="FechaHora" msprop:Generator_ColumnPropNameInTable="FechaHoraColumn" msprop:Generator_ColumnVarNameInTable="columnFechaHora" msprop:Generator_UserColumnName="FechaHora" type="xs:dateTime" />
+              <xs:element name="CodigoExpediente" msprop:Generator_ColumnPropNameInRow="CodigoExpediente" msprop:Generator_ColumnPropNameInTable="CodigoExpedienteColumn" msprop:Generator_ColumnVarNameInTable="columnCodigoExpediente" msprop:Generator_UserColumnName="CodigoExpediente" type="xs:string" />
+              <xs:element name="NombreCompletoCliente" msprop:Generator_ColumnPropNameInRow="NombreCompletoCliente" msprop:Generator_ColumnPropNameInTable="NombreCompletoClienteColumn" msprop:Generator_ColumnVarNameInTable="columnNombreCompletoCliente" msprop:Generator_UserColumnName="NombreCompletoCliente" type="xs:string" />
+              <xs:element name="Tipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_UserColumnName="Tipo" type="xs:string" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_UserColumnName="Descripcion" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,12 @@
+digraph "Model.DataSets.dsExpedientesPorEstado.ExpedientesDataTable.ExpedientesDataTable"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Model.DataSets.dsExpedientes\lPorEstado.ExpedientesDataTable.\lExpedientesDataTable",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.DataSets.dsExpedientes\lPorEstado.ExpedientesDataTable.\lInitClass",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_expedientes_por_estado_1_1_expedientes_data_table.html#a1f287923b60acd60882744d619a34323",tooltip=" "];
+}

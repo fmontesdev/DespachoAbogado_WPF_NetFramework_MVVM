@@ -1,0 +1,28 @@
+digraph "ViewModel.NuevaCitaViewModel.NuevaCitaViewModel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.NuevaCitaViewModel.\lNuevaCitaViewModel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.NuevaCitaViewModel.\lCancelar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#aa88f0ec35da10cd083349d9e625215b3",tooltip="Cancela y cierra la ventana."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.NuevaCitaViewModel.\lCargarClientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#a394c71873dd03b70426636b3fc78e85a",tooltip="Carga la lista de clientes desde la base de datos."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.NuevaCitaViewModel.\lCargarExpedientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#ad540a417dc57cf9571a0aca97635fcae",tooltip="Carga la lista de expedientes NO cerrados desde la base de datos NO los muestra inicialmente - se car..."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.NuevaCitaViewModel.\lCrearCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#aec7cc27bd5deaf42c1574a4537cb245a",tooltip="Crea la nueva cita."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.NuevaCitaViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#a72f00c2d0bf7d156e16c9088fc6545cc",tooltip="Valida el formulario antes de crear la cita."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.Validadores.Cita\lValidador.ValidarNuevaCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#abc210f1e65362f5031e5bff85f549393",tooltip="Valida todos los campos para crear una nueva cita."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Validadores.Cita\lValidador.ValidarCamposComunesCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#a2f6d65f1de83a4a86c49ca6c1aa71791",tooltip="Valida los campos comunes de una cita (fecha, horario, modalidad y motivo)."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.Validadores.Cita\lValidador.ValidarFecha",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#a208ee96c55f5287b237eb8c0f13390e6",tooltip="Valida la fecha de la cita."];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="Model.Mappers.ModalidadCita\lMapper.ObtenerTodas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_modalidad_cita_mapper.html#a8372f80ba43988cce456f36b87aad76c",tooltip="Obtiene todas las modalidades disponibles para UI."];
+}

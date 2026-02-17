@@ -1,0 +1,14 @@
+digraph "Model.DataSets.dsAgendaCitas.GetSchemaSerializable"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Model.DataSets.dsAgendaCitas.\lGetSchemaSerializable",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.DataSets.dsAgendaCitas.\lGetTypedDataSetSchema",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_agenda_citas.html#a57f809504e1a60c020b713f6accb27d8",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.DataSets.dsAgendaCitas.\lCitasDataTable.GetTypedTableSchema",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_agenda_citas_1_1_citas_data_table.html#a4690628f28f0a0faf8d4c722cc1f681e",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+digraph "Model.Mappers.TipoActuacionMapper.DeBDaUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Model.Mappers.TipoActuacion\lMapper.DeBDaUI",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Convierte un valor de tipo de actuación de la BD a su representación formateada para la UI."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ActuacionViewModel.\lAplicarFiltros",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a0398227d82618b8769837b6556605945",tooltip="Aplica el filtro de búsqueda global sobre la lista completa de actuaciones."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.Repositorios.Actuacion\lRepositorio.ObtenerDataSetActuaciones\lPendientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_repositorios_1_1_actuacion_repositorio.html#a1028b133efd3c8dea5b5d77959e7e121",tooltip="Genera el DataSet para el informe de Actuaciones Pendientes."];
+}

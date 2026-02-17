@@ -1,0 +1,24 @@
+digraph "ViewModel.Validadores.ClienteValidador.ValidarPoblacion"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.Validadores.Cliente\lValidador.ValidarPoblacion",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Valida la población del cliente."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Validadores.Cliente\lValidador.ValidarCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#a304f48d195038f14437aa6397d8aa96b",tooltip="Valida todos los campos de un cliente y devuelve el primer error encontrado."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ClienteViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a0ca42184280a777a5bb0764bc3329673",tooltip="Valida los datos del formulario de edición de clientes."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ClienteViewModel.\lEditarCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a01cb34de101b2eec24861090d75f8ac9",tooltip="Edita el cliente seleccionado con los datos de los TextBox, validando los datos y guardando los cambi..."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ClienteViewModel.\lClienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a526c17efe2cf6502ece736de0814c2ef",tooltip="Constructor que inicializa el servicio, comandos y carga los datos iniciales."];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.NuevoClienteView\lModel.ValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_cliente_view_model.html#a5687691b66f341fa028f1863e29bf485",tooltip="Valida los campos del formulario de creación de cliente usando el validador."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.NuevoClienteView\lModel.CrearCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_cliente_view_model.html#ac2a0bf4d9a4b5feaab5a4eb39fe139d2",tooltip="Crea un nuevo cliente en la base de datos después de validar el formulario."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.NuevoClienteView\lModel.NuevoClienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_cliente_view_model.html#a564fda5476080785d9c91a63d0713a80",tooltip="Constructor que inicializa el servicio y los comandos."];
+}

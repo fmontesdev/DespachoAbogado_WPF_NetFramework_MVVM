@@ -1,0 +1,18 @@
+digraph "ViewModel.ExpedienteViewModel.AplicarFiltros"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.ExpedienteView\lModel.AplicarFiltros",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Aplica el filtro de búsqueda global sobre la lista completa de expedientes."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.Mappers.EstadoExpediente\lMapper.DeBDaUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_estado_expediente_mapper.html#a45faa543e27ea56e75dd026b93785948",tooltip="Convierte un valor de estado de la BD a su representación formateada para la UI."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.Mappers.Jurisdiccion\lMapper.DeBDaUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_jurisdiccion_mapper.html#a83f5a4ca7a971d5c01365ccda0723f10",tooltip="Convierte un valor de jurisdicción de la BD a su representación formateada para la UI."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ExpedienteView\lModel.OnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#ac89af9c7feee236e5cc2eee56b8a720f",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ExpedienteView\lModel.SeleccionarPrimero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a4e2d05112bd93006c567956c004091bd",tooltip="Selecciona el primer expediente de la lista."];
+}

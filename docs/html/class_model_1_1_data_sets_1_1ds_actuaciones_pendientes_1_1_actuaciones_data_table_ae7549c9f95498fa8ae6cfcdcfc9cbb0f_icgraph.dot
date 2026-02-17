@@ -1,0 +1,16 @@
+digraph "Model.DataSets.dsActuacionesPendientes.ActuacionesDataTable.InitClass"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Model.DataSets.dsActuaciones\lPendientes.ActuacionesDataTable.\lInitClass",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.DataSets.dsActuaciones\lPendientes.ActuacionesDataTable.\lActuacionesDataTable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_data_table.html#a8d3d34909617ca6528d2e5500697df2c",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.DataSets.dsActuaciones\lPendientes.ActuacionesDataTable.Clone",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_data_table.html#ab94a0884f3d6d2db6639a129847ba9f1",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Model.DataSets.dsActuaciones\lPendientes.ActuacionesDataTable.\lCreateInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_data_table.html#a7813bfb83dcee0cf3dcb19f95d9c82ea",tooltip=" "];
+}

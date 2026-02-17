@@ -1,0 +1,16 @@
+digraph "View.Views.ExpedientesView.CbEstado_Loaded"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="View.Views.ExpedientesView.\lCbEstado_Loaded",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Inicializa el color de fondo del ComboBox de Estado al cargar."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.Views.ExpedientesView.\lActualizarColorEstado",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_expedientes_view.html#a3afd1b0a696cda7d5d46a59dd874a904",tooltip="Actualiza el color de fondo del ComboBox de Estado según el valor seleccionado."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="View.Views.ExpedientesView.\lAplicarColorAComboBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_expedientes_view.html#a3165c0b56f4140cb35efde3f61d88bcc",tooltip="Aplica un color de fondo al ComboBox y sus elementos internos del template."];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="View.Views.ExpedientesView.\lObtenerColorPorEstado",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_expedientes_view.html#a55fad07bca42cd0babc3637e1bed0483",tooltip="Obtiene el color de fondo correspondiente al estado del expediente."];
+}

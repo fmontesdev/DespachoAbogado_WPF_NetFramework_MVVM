@@ -1,0 +1,343 @@
+﻿<Window x:Class="View.Windows.NuevoClienteWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:View.Windows"
+xmlns:vm="clr-namespace:ViewModel;assembly=ViewModel"
+mc:Ignorable="d"
+Title="Nuevo Cliente"
+Width="650"
+Height="407"
+Background="#FFF0F0F0"
+WindowStartupLocation="CenterScreen"
+ResizeMode="NoResize">
+
+  <Window.Resources>
+        <!-- Converter nativo para bool a visibility -->
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        
+        <!-- Estilo para el icono del TextBox -->
+        <Style x:Key="TextBoxIcon" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#1E3A52"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Estilo para el placeholder -->
+        <Style x:Key="PlaceholderText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#AAAAAA"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Padding" Value="9,5,0,0"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <!-- Estilo para el TextBox -->
+        <Style x:Key="InputTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="#FFC0D2E3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <!-- Estilo para el botón de acción -->
+        <Style x:Key="ActionButton" TargetType="Button">
+            <Setter Property="Width" Value="110"/>
+            <Setter Property="Height" Value="33"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <!-- Capa base con el color del botón -->
+                            <Border x:Name="baseBorder"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="10"
+                                    Padding="{TemplateBinding Padding}"/>
+
+                            <!-- Capa de overlay para efectos hover/pressed -->
+                            <Border x:Name="overlayBorder"
+                                    Background="Transparent"
+                                    CornerRadius="10"
+                                    Padding="{TemplateBinding Padding}">
+                                <ContentPresenter HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextBlock.Foreground="{TemplateBinding Foreground}"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="overlayBorder" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="Black" Opacity="0.07"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <!-- Presionado -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="overlayBorder" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="Black" Opacity="0.14"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- HEADER  -->
+        <Border Grid.Row="0"
+                Background="#1E3A52"
+				Padding="10"
+                BorderBrush="#E0E0E0"
+                BorderThickness="0,0,0,1">
+
+            <TextBlock Text="Crear Cliente"
+                       Foreground="White"
+                       FontSize="21"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- CONTENIDO -->
+        <Grid Grid.Row="1" Margin="18">
+
+            <!-- DATOS DEL CLIENTE -->
+            <Border Grid.Row="0"
+                    Background="#FFE7EFF6"
+                    CornerRadius="11"
+                    Padding="16,11,16,16"
+                    BorderBrush="#FFC0D2E3"
+                    BorderThickness="1">
+
+                <StackPanel Orientation="Vertical">
+                    <!-- Título de sección -->
+                    <TextBlock Text="Datos del Cliente"
+                               FontSize="12"
+                               Foreground="#7A7A7A"
+                               Margin="2,0,0,8"/>
+
+                    <!-- Grid unificado con todas las filas -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.4*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- FILA 1: Nombre -->
+                        <Grid Grid.Row="0" Grid.Column="0" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="👤"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtNombre"
+                                         Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="100"/>
+                                <TextBlock x:Name="placeholderNombre"
+                                           Text="Nombre"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+
+                        <!-- FILA 1: Apellidos -->
+                        <Grid Grid.Row="0" Grid.Column="2" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="👥"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtApellidos"
+                                         Text="{Binding Apellidos, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="100"/>
+                                <TextBlock x:Name="placeholderApellidos"
+                                           Text="Apellidos"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+
+                        <!-- FILA 2: DNI -->
+                        <Grid Grid.Row="1" Grid.Column="0" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="🆔"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtDni"
+                                         Text="{Binding Dni, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="20"/>
+                                <TextBlock x:Name="placeholderDni"
+                                           Text="DNI"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+
+                        <!-- FILA 3: Teléfono -->
+                        <Grid Grid.Row="2" Grid.Column="0" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="📞"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtTelefono"
+                                         Text="{Binding Telefono, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="20"/>
+                                <TextBlock x:Name="placeholderTelefono"
+                                           Text="Teléfono (opcional)"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+
+                        <!-- FILA 3: Email -->
+                        <Grid Grid.Row="2" Grid.Column="2" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="✉"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtEmail"
+                                         Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="100"/>
+                                <TextBlock x:Name="placeholderEmail"
+                                           Text="Email"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+
+                        <!-- FILA 4: Población -->
+                        <Grid Grid.Row="3" Grid.Column="0" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="🏙️"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtPoblacion"
+                                         Text="{Binding Poblacion, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="100"/>
+                                <TextBlock x:Name="placeholderPoblacion"
+                                           Text="Población"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+
+                        <!-- FILA 4: Dirección -->
+                        <Grid Grid.Row="3" Grid.Column="2" Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="🏠"
+                                       Grid.Column="0"
+                                       Style="{StaticResource TextBoxIcon}"
+                                       FontSize="16"
+                                       Margin="0,0,8,0"/>
+                            <Grid Grid.Column="1">
+                                <TextBox x:Name="txtDireccion"
+                                         Text="{Binding Direccion, UpdateSourceTrigger=PropertyChanged}"
+                                         Style="{StaticResource InputTextBox}"
+                                         TextChanged="TextBox_TextChanged"
+                                         MaxLength="255"/>
+                                <TextBlock x:Name="placeholderDireccion"
+                                           Text="Dirección (opcional)"
+                                           Style="{StaticResource PlaceholderText}"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <!-- Mensaje de Error (se muestra solo si HasError es true) -->
+                    <Border Background="#FFFFE0E0" 
+                            BorderBrush="#FFFF6B6B" 
+                            BorderThickness="1" 
+                            CornerRadius="5" 
+                            Padding="8,6"
+                            Margin="0,0,0,10"
+                            Visibility="{Binding HasError, Converter={StaticResource BoolToVisibilityConverter}}">
+                        <TextBlock Text="{Binding ErrorMessage}" 
+                                   Foreground="#FFD32F2F" 
+                                   FontSize="12" 
+                                   TextWrapping="Wrap"/>
+                    </Border>
+
+                    <!-- Botones de acción -->
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,5,0,0">
+                        <Button Content="➕ Crear"
+                                Command="{Binding CrearCommand}"
+                                Style="{StaticResource ActionButton}"
+                                Background="#6AAE6A"
+                                Margin="0,0,10,0"/>
+
+                        <Button Content="❌ Cancelar"
+                                Command="{Binding CancelarCommand}"
+                                Style="{StaticResource ActionButton}"
+                                Background="#F5C469"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

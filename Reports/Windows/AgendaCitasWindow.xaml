@@ -1,0 +1,24 @@
+﻿<Window x:Class="Reports.Windows.AgendaCitasWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wf="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:cr="clr-namespace:CrystalDecisions.Windows.Forms;assembly=CrystalDecisions.Windows.Forms"
+        Title="Agenda de Citas" 
+        Height="600" 
+        Width="900"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+    
+    <Grid>
+        <!-- WindowsFormsHost para integrar CrystalReportViewer (Windows Forms) en WPF -->
+        <wf:WindowsFormsHost>
+            <cr:CrystalReportViewer x:Name="crystalReportViewer" 
+                                     DisplayGroupTree="False"
+                                     ShowRefreshButton="False"
+                                     ShowCloseButton="False"
+                                     ShowGroupTreeButton="True"
+                                     ShowExportButton="True"
+                                     ShowPrintButton="True"/>
+        </wf:WindowsFormsHost>
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+digraph "ViewModel.ActuacionViewModel.CargarActuacionesAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.ActuacionViewModel.\lCargarActuacionesAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Carga la lista de actuaciones desde la base de datos y actualiza la colección observable."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ActuacionViewModel.\lOnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a7a5bd23498b15861ced88580d55434ab",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+}

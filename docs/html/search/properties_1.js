@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['buscar_0',['Buscar',['../class_view_model_1_1_actuacion_view_model.html#a3950e4c3fcee96e8f80704ca631974a8',1,'ViewModel.ActuacionViewModel.Buscar'],['../class_view_model_1_1_cita_view_model.html#a6e7303b2b3d6d86b2b31677ba6399872',1,'ViewModel.CitaViewModel.Buscar'],['../class_view_model_1_1_cliente_view_model.html#a8f42d7da88aa10fe7361586ccc8039a4',1,'ViewModel.ClienteViewModel.Buscar'],['../class_view_model_1_1_expediente_view_model.html#a3eb6a31c31d9b81ea2ec0a4e53a8c4ba',1,'ViewModel.ExpedienteViewModel.Buscar']]],
+  ['buscarcliente_1',['BuscarCliente',['../class_view_model_1_1_nueva_cita_view_model.html#a0e8b37eb77296354b24e10af13b7d3dc',1,'ViewModel.NuevaCitaViewModel.BuscarCliente'],['../class_view_model_1_1_nuevo_expediente_view_model.html#adfe91c203f7ed0a9252b574609c4b293',1,'ViewModel.NuevoExpedienteViewModel.BuscarCliente']]],
+  ['buscarexpediente_2',['BuscarExpediente',['../class_view_model_1_1_nueva_actuacion_view_model.html#ad4004670594764a8cb307078b99f9774',1,'ViewModel.NuevaActuacionViewModel.BuscarExpediente'],['../class_view_model_1_1_nueva_cita_view_model.html#a5ac745d0b09e6d44d42d2901b80572ce',1,'ViewModel.NuevaCitaViewModel.BuscarExpediente']]]
+];

@@ -1,0 +1,27 @@
+digraph "View.Windows.NuevaCitaWindow.ActualizarVisibilidadPlaceholder"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="View.Windows.NuevaCitaWindow.\lActualizarVisibilidadPlaceholder",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.Windows.NuevaCitaWindow.\lCbCliente_SelectionChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#ae161e94280704229a1b45f8f8f80940b",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="View.Windows.NuevaCitaWindow.\lCbExpediente_SelectionChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#ab8c4910ed15b834ee41ef187027a148f",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="View.Windows.NuevaCitaWindow.\lComboBoxCliente_TextChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#aaf1c16711cddeff69019a43156792f5d",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="View.Windows.NuevaCitaWindow.\lNuevaCitaWindow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#ae8b7b38c3f10e9fa0dd8daa684a93403",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="View.Windows.NuevaCitaWindow.\lComboBoxExpediente_TextChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#a59d97816a86ce8501ede367d89f5d6b2",tooltip=" "];
+  Node6 -> Node5 [id="edge6_Node000006_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge7_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge8_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="View.Windows.NuevaCitaWindow.\lTextBox_TextChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#a7f67c482042d8c6a414ab66458300a75",tooltip=" "];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="View.Windows.NuevaCitaWindow.\lViewModel_PropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_cita_window.html#a40365e9fef371e7d52c8b6b5aa8fd36b",tooltip=" "];
+  Node8 -> Node5 [id="edge10_Node000008_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

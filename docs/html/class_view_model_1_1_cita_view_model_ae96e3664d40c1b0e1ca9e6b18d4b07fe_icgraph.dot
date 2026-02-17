@@ -1,0 +1,19 @@
+digraph "ViewModel.CitaViewModel.CargarCitasAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.CitaViewModel.\lCargarCitasAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Carga la lista de citas desde la base de datos y actualiza la colección observable."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.CitaViewModel.\lConfirmarEliminarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a615956ed9414be152994f58d08f0fbfa",tooltip="Confirma y ejecuta la eliminación de la cita de la base de datos."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.CitaViewModel.\lEditarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a89f5e958916a3b32e9e514683d8cfeb8",tooltip="Edita la cita seleccionada con los datos de los campos, validando los datos y guardando los cambios e..."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.CitaViewModel.\lCitaViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#aed1a5302634a916eda8cc1e8dd456d95",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.CitaViewModel.\lInicializarAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#abb0d46008aa1ca3449d59002e2cd9b8a",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona la primera cita."];
+  Node5 -> Node4 [id="edge5_Node000005_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

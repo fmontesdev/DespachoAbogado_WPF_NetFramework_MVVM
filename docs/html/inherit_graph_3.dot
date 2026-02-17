@@ -1,0 +1,10 @@
+digraph "Gráfico de jerarquía de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="DespachoAbogado.Properties.\lResources",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_despacho_abogado_1_1_properties_1_1_resources.html",tooltip="Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc."];
+}

@@ -1,0 +1,14 @@
+digraph "ViewModel.Services.CitaService.ObtenerCitasAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.Services.CitaService.\lObtenerCitasAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Obtiene todas las citas de la base de datos."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Testing.TestHorarioOcupado.\lTestControlHorario_DiferentesHorarios\l_AmbasCitasCreadas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_testing_1_1_test_horario_ocupado.html#aece4e75e0fa5a89ab991f9f86b42fb2f",tooltip="Prueba que verifica que se pueden crear múltiples citas en diferentes horarios."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Testing.TestHorarioOcupado.\lTestControlHorario_HorarioOcupado\l_SegundaCitaDenegada",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_testing_1_1_test_horario_ocupado.html#ad84fd085388861effc7763bdffb8dfb9",tooltip="Prueba de integración que verifica el control de horarios ocupados."];
+}

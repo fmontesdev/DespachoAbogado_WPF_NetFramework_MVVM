@@ -1,0 +1,16 @@
+digraph "ViewModel.InformeViewModel.GenerarInforme"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.InformeViewModel.\lGenerarInforme",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Genera y muestra el informe seleccionado según su tipo."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.InformeViewModel.\lGenerarActuacionesPendientes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_informe_view_model.html#aa748786b21a402d51da2aed16d213453",tooltip="Genera el informe de Actuaciones Pendientes y abre la ventana del visor."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.InformeViewModel.\lGenerarAgendaCitas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_informe_view_model.html#a4ad956e4817f239edad0622b6e58e4b0",tooltip="Genera el informe de Agenda de Citas y abre la ventana del visor."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.InformeViewModel.\lGenerarExpedientesPorEstado",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_informe_view_model.html#a18bf252cc50a7c3681bbf7166be9a4ba",tooltip="Genera el informe de Expedientes por Estado y abre la ventana del visor."];
+}

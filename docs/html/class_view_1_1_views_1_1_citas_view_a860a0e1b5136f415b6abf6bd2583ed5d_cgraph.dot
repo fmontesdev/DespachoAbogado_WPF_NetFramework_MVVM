@@ -1,0 +1,14 @@
+digraph "View.Views.CitasView.ActualizarColorEstado"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="View.Views.CitasView.Actualizar\lColorEstado",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Actualiza el color de fondo del ComboBox de Estado según el valor seleccionado."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.Views.CitasView.Aplicar\lColorAComboBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_citas_view.html#a8fc14bdad8ab51427fbe4cc8e970c15f",tooltip="Aplica un color de fondo al ComboBox y sus elementos internos del template."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="View.Views.CitasView.Obtener\lColorPorEstado",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_citas_view.html#a6402adcbfed612a09989fba2caa25a56",tooltip="Obtiene el color de fondo correspondiente al estado de la cita Programada → Naranja (FFE4A3) Realizad..."];
+}

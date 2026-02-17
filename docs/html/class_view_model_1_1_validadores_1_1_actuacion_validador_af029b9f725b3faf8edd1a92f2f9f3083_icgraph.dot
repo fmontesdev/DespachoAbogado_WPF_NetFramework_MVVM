@@ -1,0 +1,26 @@
+digraph "ViewModel.Validadores.ActuacionValidador.ValidarCamposComunesActuacion"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.Validadores.Actuacion\lValidador.ValidarCamposComunesActuacion",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Valida los campos comunes de una actuación (tipo y descripción)."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Validadores.Actuacion\lValidador.ValidarActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_actuacion_validador.html#aafbef4628192a26e4e58b0b360389c24",tooltip="Valida todos los campos de una actuación existente."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ActuacionViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a8e8cc3e0fb1affa8efc57c44aef0678d",tooltip="Valida los datos del formulario de edición de actuaciones."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ActuacionViewModel.\lEditarActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a7058914db45f3a152453e6608f78bd4d",tooltip="Edita la actuación seleccionada con los datos de los campos, validando los datos y guardando los cambios..."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ActuacionViewModel.\lActuacionViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a992f023587b9a52c4fa4076fd6ded8cc",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.Validadores.Actuacion\lValidador.ValidarNuevaActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_actuacion_validador.html#a6c0f215648a42d2dc9b4fbfbc8ac4e7f",tooltip="Valida todos los campos para crear una nueva actuación."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.NuevaActuacion\lViewModel.ValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_actuacion_view_model.html#a9d9dd8ecc5a4c72133d1eace23e75cd6",tooltip="Valida el formulario antes de crear la actuación."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.NuevaActuacion\lViewModel.CrearActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_actuacion_view_model.html#a3ae4813bcb1b63297d6efb0ad3bd944b",tooltip="Crea la nueva actuación."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.NuevaActuacion\lViewModel.NuevaActuacionViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_actuacion_view_model.html#a1612fc3f43f77947c244f95272da5e17",tooltip="Constructor."];
+}

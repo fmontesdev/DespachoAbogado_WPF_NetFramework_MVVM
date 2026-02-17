@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Despacho de Abogados: Referencia de la clase ViewModel.Validadores.ClienteValidador</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Despacho de Abogados<span id="projectnumber">&#160;v1.0.0</span>
+   </div>
+   <div id="projectbrief">Sistema integral de gestiÛn para despachos de abogados</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_view_model_1_1_validadores_1_1_cliente_validador.html','','class_view_model_1_1_validadores_1_1_cliente_validador-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia de la clase ViewModel.Validadores.ClienteValidador</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que encapsula las validaciones de negocio para la entidad <a class="el" href="class_model_1_1_cliente.html" title="Clase parcial de Cliente para propiedades calculadas de presentaciÛn.">Cliente</a>.  
+ <a href="#details">M√°s...</a></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Diagrama de colaboraci√≥n de ViewModel.Validadores.ClienteValidador:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador__coll__graph.png" border="0" usemap="#a_view_model_8_validadores_8_cliente_validador_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+M√©todos p√∫blicos est√°ticos</h2></td></tr>
+<tr class="memitem:a304f48d195038f14437aa6397d8aa96b" id="r_a304f48d195038f14437aa6397d8aa96b"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a304f48d195038f14437aa6397d8aa96b">ValidarCliente</a> (string nombre, string apellidos, string dni, string telefono, string email, string poblacion, string direccion, out string mensajeError)</td></tr>
+<tr class="memdesc:a304f48d195038f14437aa6397d8aa96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida todos los campos de un cliente y devuelve el primer error encontrado.  <br /></td></tr>
+<tr class="memitem:ab6bebe6fd3fb72b24da109642a4e7686" id="r_ab6bebe6fd3fb72b24da109642a4e7686"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab6bebe6fd3fb72b24da109642a4e7686">ValidarEmail</a> (string email, out string mensajeError)</td></tr>
+<tr class="memdesc:ab6bebe6fd3fb72b24da109642a4e7686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida el email del cliente.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+M√©todos privados est√°ticos</h2></td></tr>
+<tr class="memitem:abf12bf9ebc55c05db8c61df21e408265" id="r_abf12bf9ebc55c05db8c61df21e408265"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#abf12bf9ebc55c05db8c61df21e408265">ValidarNombre</a> (string nombre, out string mensajeError)</td></tr>
+<tr class="memdesc:abf12bf9ebc55c05db8c61df21e408265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida el nombre del cliente.  <br /></td></tr>
+<tr class="memitem:ad0230b9b1de40437f68342817c06a901" id="r_ad0230b9b1de40437f68342817c06a901"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad0230b9b1de40437f68342817c06a901">ValidarApellidos</a> (string apellidos, out string mensajeError)</td></tr>
+<tr class="memdesc:ad0230b9b1de40437f68342817c06a901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida los apellidos del cliente.  <br /></td></tr>
+<tr class="memitem:a27d3af77eea531b6ec0297f796197934" id="r_a27d3af77eea531b6ec0297f796197934"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a27d3af77eea531b6ec0297f796197934">ValidarDni</a> (string dni, out string mensajeError)</td></tr>
+<tr class="memdesc:a27d3af77eea531b6ec0297f796197934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida el DNI del cliente (8 dÌgitos seguidos de una letra).  <br /></td></tr>
+<tr class="memitem:aa36c9d0fd461582644433bf08e08e9d3" id="r_aa36c9d0fd461582644433bf08e08e9d3"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa36c9d0fd461582644433bf08e08e9d3">ValidarTelefono</a> (string telefono, out string mensajeError)</td></tr>
+<tr class="memdesc:aa36c9d0fd461582644433bf08e08e9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida el telÈfono del cliente (opcional, 9 dÌgitos empezando por 6, 7, 8 o 9).  <br /></td></tr>
+<tr class="memitem:a0e598de32867b4e4257940b7ff73735e" id="r_a0e598de32867b4e4257940b7ff73735e"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0e598de32867b4e4257940b7ff73735e">ValidarPoblacion</a> (string poblacion, out string mensajeError)</td></tr>
+<tr class="memdesc:a0e598de32867b4e4257940b7ff73735e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida la poblaciÛn del cliente.  <br /></td></tr>
+<tr class="memitem:ab6f4db4ec11cb6f704a18f8a6ccde28e" id="r_ab6f4db4ec11cb6f704a18f8a6ccde28e"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab6f4db4ec11cb6f704a18f8a6ccde28e">ValidarDireccion</a> (string direccion, out string mensajeError)</td></tr>
+<tr class="memdesc:ab6f4db4ec11cb6f704a18f8a6ccde28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida la direcciÛn del cliente (opcional, no puede ser solo n˙meros).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos est√°ticos privados</h2></td></tr>
+<tr class="memitem:ae9381d2d74e9b4771bb51a0e90f4b8ce" id="r_ae9381d2d74e9b4771bb51a0e90f4b8ce"><td class="memItemLeft">static readonly string&#160;</td><td class="memItemRight"><a class="el" href="#ae9381d2d74e9b4771bb51a0e90f4b8ce">PatronEmail</a> = @&quot;^[^@\s]+@[^@\s]+\.[^@\s]+$&quot;</td></tr>
+<tr class="memitem:a4dbb7f6a57a0748510b291377294fda7" id="r_a4dbb7f6a57a0748510b291377294fda7"><td class="memItemLeft">static readonly string&#160;</td><td class="memItemRight"><a class="el" href="#a4dbb7f6a57a0748510b291377294fda7">PatronDni</a> = @&quot;^\d{8}[A-Za-z]$&quot;</td></tr>
+<tr class="memitem:aac77c30730f90097fec0a7813eecb8be" id="r_aac77c30730f90097fec0a7813eecb8be"><td class="memItemLeft">static readonly string&#160;</td><td class="memItemRight"><a class="el" href="#aac77c30730f90097fec0a7813eecb8be">PatronTelefono</a> = @&quot;^[6789]\d{8}$&quot;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripci√≥n detallada</h2>
+<div class="textblock"><p>Clase que encapsula las validaciones de negocio para la entidad <a class="el" href="class_model_1_1_cliente.html" title="Clase parcial de Cliente para propiedades calculadas de presentaciÛn.">Cliente</a>. </p>
+<p>Proporciona mÈtodos est·ticos para validar cada campo de un cliente </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentaci√≥n de funciones miembro</h2>
+<a id="ad0230b9b1de40437f68342817c06a901" name="ad0230b9b1de40437f68342817c06a901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0230b9b1de40437f68342817c06a901">&#9670;&#160;</a></span>ValidarApellidos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarApellidos </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>apellidos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida los apellidos del cliente. </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">apellidos</td><td>Apellidos a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si los apellidos son v·lidos</dd></dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_ad0230b9b1de40437f68342817c06a901_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_ad0230b9b1de40437f68342817c06a901_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a304f48d195038f14437aa6397d8aa96b" name="a304f48d195038f14437aa6397d8aa96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304f48d195038f14437aa6397d8aa96b">&#9670;&#160;</a></span>ValidarCliente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarCliente </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>nombre</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>apellidos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dni</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>telefono</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>poblacion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>direccion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida todos los campos de un cliente y devuelve el primer error encontrado. </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Nombre del cliente</td></tr>
+    <tr><td class="paramname">apellidos</td><td>Apellidos del cliente</td></tr>
+    <tr><td class="paramname">dni</td><td>DNI del cliente</td></tr>
+    <tr><td class="paramname">telefono</td><td>TelÈfono del cliente (opcional)</td></tr>
+    <tr><td class="paramname">email</td><td>Email del cliente</td></tr>
+    <tr><td class="paramname">poblacion</td><td>PoblaciÛn del cliente</td></tr>
+    <tr><td class="paramname">direccion</td><td>DirecciÛn del cliente (opcional)</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si todos los campos son v·lidos, false en caso contrario</dd></dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas de esta funci√≥n:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_a304f48d195038f14437aa6397d8aa96b_cgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_a304f48d195038f14437aa6397d8aa96b_cgraph" loading="lazy" alt=""/></div>
+</div>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_a304f48d195038f14437aa6397d8aa96b_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_a304f48d195038f14437aa6397d8aa96b_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ab6f4db4ec11cb6f704a18f8a6ccde28e" name="ab6f4db4ec11cb6f704a18f8a6ccde28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f4db4ec11cb6f704a18f8a6ccde28e">&#9670;&#160;</a></span>ValidarDireccion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarDireccion </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>direccion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida la direcciÛn del cliente (opcional, no puede ser solo n˙meros). </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direccion</td><td>DirecciÛn a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si la direcciÛn es v·lida o est· vacÌa</dd></dl>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_ab6f4db4ec11cb6f704a18f8a6ccde28e_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_ab6f4db4ec11cb6f704a18f8a6ccde28e_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a27d3af77eea531b6ec0297f796197934" name="a27d3af77eea531b6ec0297f796197934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d3af77eea531b6ec0297f796197934">&#9670;&#160;</a></span>ValidarDni()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarDni </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dni</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida el DNI del cliente (8 dÌgitos seguidos de una letra). </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dni</td><td>DNI a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el DNI es v·lido</dd></dl>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_a27d3af77eea531b6ec0297f796197934_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_a27d3af77eea531b6ec0297f796197934_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ab6bebe6fd3fb72b24da109642a4e7686" name="ab6bebe6fd3fb72b24da109642a4e7686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6bebe6fd3fb72b24da109642a4e7686">&#9670;&#160;</a></span>ValidarEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarEmail </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida el email del cliente. </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>Email a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el email es v·lido</dd></dl>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_ab6bebe6fd3fb72b24da109642a4e7686_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_ab6bebe6fd3fb72b24da109642a4e7686_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="abf12bf9ebc55c05db8c61df21e408265" name="abf12bf9ebc55c05db8c61df21e408265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf12bf9ebc55c05db8c61df21e408265">&#9670;&#160;</a></span>ValidarNombre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarNombre </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>nombre</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida el nombre del cliente. </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Nombre a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el nombre es v·lido</dd></dl>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_abf12bf9ebc55c05db8c61df21e408265_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_abf12bf9ebc55c05db8c61df21e408265_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a0e598de32867b4e4257940b7ff73735e" name="a0e598de32867b4e4257940b7ff73735e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e598de32867b4e4257940b7ff73735e">&#9670;&#160;</a></span>ValidarPoblacion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarPoblacion </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>poblacion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida la poblaciÛn del cliente. </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poblacion</td><td>PoblaciÛn a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si la poblaciÛn es v·lida</dd></dl>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_a0e598de32867b4e4257940b7ff73735e_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_a0e598de32867b4e4257940b7ff73735e_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aa36c9d0fd461582644433bf08e08e9d3" name="aa36c9d0fd461582644433bf08e08e9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36c9d0fd461582644433bf08e08e9d3">&#9670;&#160;</a></span>ValidarTelefono()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ViewModel.Validadores.ClienteValidador.ValidarTelefono </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>telefono</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>mensajeError</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Valida el telÈfono del cliente (opcional, 9 dÌgitos empezando por 6, 7, 8 o 9). </p>
+<dl class="params"><dt>Par√°metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">telefono</td><td>TelÈfono a validar</td></tr>
+    <tr><td class="paramname">mensajeError</td><td>Mensaje de error si la validaciÛn falla</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True si el telÈfono es v·lido o est· vacÌo</dd></dl>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Gr√°fico de llamadas a esta funci√≥n:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_view_model_1_1_validadores_1_1_cliente_validador_aa36c9d0fd461582644433bf08e08e9d3_icgraph.png" border="0" usemap="#aclass_view_model_1_1_validadores_1_1_cliente_validador_aa36c9d0fd461582644433bf08e08e9d3_icgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentaci√≥n de datos miembro</h2>
+<a id="a4dbb7f6a57a0748510b291377294fda7" name="a4dbb7f6a57a0748510b291377294fda7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbb7f6a57a0748510b291377294fda7">&#9670;&#160;</a></span>PatronDni</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string ViewModel.Validadores.ClienteValidador.PatronDni = @&quot;^\d{8}[A-Za-z]$&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9381d2d74e9b4771bb51a0e90f4b8ce" name="ae9381d2d74e9b4771bb51a0e90f4b8ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9381d2d74e9b4771bb51a0e90f4b8ce">&#9670;&#160;</a></span>PatronEmail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string ViewModel.Validadores.ClienteValidador.PatronEmail = @&quot;^[^@\s]+@[^@\s]+\.[^@\s]+$&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac77c30730f90097fec0a7813eecb8be" name="aac77c30730f90097fec0a7813eecb8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac77c30730f90097fec0a7813eecb8be">&#9670;&#160;</a></span>PatronTelefono</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string ViewModel.Validadores.ClienteValidador.PatronTelefono = @&quot;^[6789]\d{8}$&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentaci√≥n de esta clase est√° generada del siguiente archivo:<ul>
+<li>ViewModel/Validadores/<a class="el" href="_cliente_validador_8cs.html">ClienteValidador.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_view_model.html">ViewModel</a></li><li class="navelem"><a href="namespace_view_model_1_1_validadores.html">Validadores</a></li><li class="navelem"><a href="class_view_model_1_1_validadores_1_1_cliente_validador.html">ClienteValidador</a></li>
+    <li class="footer">Generado el <span class="timestamp"></span> para Despacho de Abogados por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

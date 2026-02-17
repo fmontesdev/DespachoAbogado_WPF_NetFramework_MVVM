@@ -1,0 +1,12 @@
+digraph "Testing.TestEmailCliente.TestEmailsInvalidos_RetornaFalse"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Testing.TestEmailCliente.\lTestEmailsInvalidos_RetornaFalse",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Prueba que verifica que emails con formato inválido son rechazados por la validación."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Validadores.Cliente\lValidador.ValidarEmail",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#ab6bebe6fd3fb72b24da109642a4e7686",tooltip="Valida el email del cliente."];
+}

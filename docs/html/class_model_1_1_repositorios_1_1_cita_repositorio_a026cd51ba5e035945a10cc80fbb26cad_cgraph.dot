@@ -1,0 +1,14 @@
+digraph "Model.Repositorios.CitaRepositorio.ObtenerDataSetAgendaCitasAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Model.Repositorios.CitaRepositorio.\lObtenerDataSetAgendaCitasAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Genera el DataSet para el informe de Agenda de Citas por día."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.Mappers.EstadoCita\lMapper.DeBDaUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_estado_cita_mapper.html#ab5e0e080a47263ef52abbf6a706ba409",tooltip="Convierte un valor de estado de cita de la BD a su representación formateada para la UI."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.Mappers.ModalidadCita\lMapper.DeBDaUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_modalidad_cita_mapper.html#a718b794b491408da406810b18886304a",tooltip="Convierte un valor de modalidad de la BD a su representación formateada para la UI."];
+}

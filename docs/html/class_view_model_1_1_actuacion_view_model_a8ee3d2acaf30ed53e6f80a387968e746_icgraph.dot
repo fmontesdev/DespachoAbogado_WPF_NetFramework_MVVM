@@ -1,0 +1,22 @@
+digraph "ViewModel.ActuacionViewModel.FiltrarPorExpediente"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.ActuacionViewModel.\lFiltrarPorExpediente",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Aplica un filtro para mostrar solo las actuaciones del expediente especificado."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.MainWindow.CambiarVista",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_main_window.html#acc6019102d0321720fe80108e1af099f",tooltip="Maneja el cambio de vista en el panel de contenido principal."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="View.Views.ExpedientesView.\lIrAActuacionesExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_expedientes_view.html#a4b869dcddc07386f15653fbd9bb01708",tooltip="Navega a la vista de Actuaciones con el expediente seleccionado como filtro."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="View.Views.ExpedientesView.\lExpedientesView",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_expedientes_view.html#a2d06ee5e682760f2a489aea1788111db",tooltip="Constructor que inicializa la vista y configura el ViewModel."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="View.Views.ClientesView.\lIrAExpedientesCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_clientes_view.html#a34f40a5381e6b8730ef0f25beaac1782",tooltip="Navega a la vista de Expedientes con el cliente seleccionado como filtro."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="View.Views.ClientesView.\lClientesView",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_clientes_view.html#ac64eefecddfb76760dee8d0bf7d43c77",tooltip="Constructor que inicializa la vista y configura el ViewModel."];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="View.MainWindow.MainWindow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_main_window.html#a04ab9509f5a18ffd5f98e051182ed867",tooltip="Constructor que inicializa la ventana principal y configura el ViewModel."];
+}

@@ -1,0 +1,42 @@
+digraph "ViewModel.ActuacionViewModel.ActuacionViewModel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.ActuacionViewModel.\lActuacionViewModel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ActuacionViewModel.\lEditarActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a7058914db45f3a152453e6608f78bd4d",tooltip="Edita la actuación seleccionada con los datos de los campos, validando los datos y guardando los cambios..."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ActuacionViewModel.\lCargarActuacionesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#ae5dba3aa016db5c7ae1d9327c7faa20f",tooltip="Carga la lista de actuaciones desde la base de datos y actualiza la colección observable."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ActuacionViewModel.\lOnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a7a5bd23498b15861ced88580d55434ab",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ActuacionViewModel.\lMantieneSeleccion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a06f281aaace8eb3286c5f2004357b315",tooltip="Mantiene la selección de la actuación en el índice especificado."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.ActuacionViewModel.\lSeleccionarPrimero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#aab1ecaa151b0011e7f0d0cdfd8153416",tooltip="Selecciona la primera actuación de la lista."];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.ActuacionViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a8e8cc3e0fb1affa8efc57c44aef0678d",tooltip="Valida los datos del formulario de edición de actuaciones."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Validadores.Actuacion\lValidador.ValidarActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_actuacion_validador.html#aafbef4628192a26e4e58b0b360389c24",tooltip="Valida todos los campos de una actuación existente."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.Validadores.Actuacion\lValidador.ValidarCamposComunesActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_actuacion_validador.html#af029b9f725b3faf8edd1a92f2f9f3083",tooltip="Valida los campos comunes de una actuación (tipo y descripción)."];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="ViewModel.ActuacionViewModel.\lEliminarActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a4bbb935d71f9544d68abc3db37048ee7",tooltip="Solicita confirmación para eliminar la actuación seleccionada."];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="ViewModel.ActuacionViewModel.\lInicializarAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#aa666723edc2a4df62f025fa350c5f13f",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona la primera actuación."];
+  Node11 -> Node3 [id="edge11_Node000011_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node12 [id="edge12_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="ViewModel.ActuacionViewModel.\lCargarExpedientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a232f9d98ea98e4dbc38c432d58862182",tooltip="Carga la lista de expedientes desde la base de datos."];
+  Node11 -> Node6 [id="edge13_Node000011_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node13 [id="edge14_Node000001_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="ViewModel.ActuacionViewModel.\lLimpiarBusqueda",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#ac618ad64a333b83666453d5bb5e81870",tooltip="Limpia el filtro de búsqueda y muestra todas las actuaciones."];
+  Node1 -> Node14 [id="edge15_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="ViewModel.ActuacionViewModel.\lNuevaActuacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#ae2826c9bb53e7c1bacebc9cf9c0559a2",tooltip="Abre la ventana modal para crear una nueva actuación."];
+  Node1 -> Node15 [id="edge16_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="Model.Mappers.EstadoActuacion\lMapper.ObtenerTodos",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_estado_actuacion_mapper.html#ad02c7db446d4393ac492fcfbd882cada",tooltip="Obtiene todos los estados de actuación disponibles para UI."];
+  Node1 -> Node16 [id="edge17_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="Model.Mappers.TipoActuacion\lMapper.ObtenerTodos",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_tipo_actuacion_mapper.html#ae6996760ec8e029380d57b1c6dbbbad8",tooltip="Obtiene todos los tipos de actuación disponibles para UI."];
+}

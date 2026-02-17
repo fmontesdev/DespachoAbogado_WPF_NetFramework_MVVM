@@ -1,0 +1,12 @@
+digraph "ViewModel.CitaViewModel.InicializarAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.CitaViewModel.\lInicializarAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona la primera cita."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.CitaViewModel.\lCitaViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#aed1a5302634a916eda8cc1e8dd456d95",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+}

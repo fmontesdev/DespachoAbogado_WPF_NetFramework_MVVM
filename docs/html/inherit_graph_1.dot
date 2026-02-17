@@ -1,0 +1,20 @@
+digraph "Gráfico de jerarquía de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="Component",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node0 -> Node1 [id="edge2_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="Reports.Reports.CachedActuaciones\lPendientesInforme",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_reports_1_1_reports_1_1_cached_actuaciones_pendientes_informe.html",tooltip=" "];
+  Node0 -> Node3 [id="edge3_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Reports.Reports.CachedAgenda\lCitasInforme",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_reports_1_1_reports_1_1_cached_agenda_citas_informe.html",tooltip=" "];
+  Node0 -> Node4 [id="edge4_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Reports.Reports.CachedExpedientes\lPorEstadoInforme",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_reports_1_1_reports_1_1_cached_expedientes_por_estado_informe.html",tooltip=" "];
+  Node2 [id="Node000002",label="ICachedReport",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node2 -> Node1 [id="edge5_Node000002_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node3 [id="edge6_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node4 [id="edge7_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

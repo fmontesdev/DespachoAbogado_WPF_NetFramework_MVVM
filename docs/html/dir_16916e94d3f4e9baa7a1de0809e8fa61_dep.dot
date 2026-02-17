@@ -1,0 +1,13 @@
+digraph "Reports/Properties"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_13657bd353fa49958096b6a99c1a3867 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="Reports", fontname=Arial,fontsize=10 style="filled,dashed", URL="dir_13657bd353fa49958096b6a99c1a3867.html",tooltip=""]
+  dir_16916e94d3f4e9baa7a1de0809e8fa61 [label="Properties", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_16916e94d3f4e9baa7a1de0809e8fa61.html",tooltip=""];
+  }
+}

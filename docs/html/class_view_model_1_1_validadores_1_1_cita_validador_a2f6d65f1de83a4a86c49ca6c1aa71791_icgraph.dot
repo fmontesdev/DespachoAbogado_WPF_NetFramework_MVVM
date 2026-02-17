@@ -1,0 +1,26 @@
+digraph "ViewModel.Validadores.CitaValidador.ValidarCamposComunesCita"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.Validadores.Cita\lValidador.ValidarCamposComunesCita",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Valida los campos comunes de una cita (fecha, horario, modalidad y motivo)."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Validadores.Cita\lValidador.ValidarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#af887c54237b3eddda60465cfb14da827",tooltip="Valida todos los campos de una cita existente para edición."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.CitaViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a2185f6c7620b15e6e1125a82148e5d57",tooltip="Valida los datos del formulario de edición de citas."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.CitaViewModel.\lEditarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a89f5e958916a3b32e9e514683d8cfeb8",tooltip="Edita la cita seleccionada con los datos de los campos, validando los datos y guardando los cambios e..."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.CitaViewModel.\lCitaViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#aed1a5302634a916eda8cc1e8dd456d95",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.Validadores.Cita\lValidador.ValidarNuevaCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cita_validador.html#abc210f1e65362f5031e5bff85f549393",tooltip="Valida todos los campos para crear una nueva cita."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.NuevaCitaViewModel.\lValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#a72f00c2d0bf7d156e16c9088fc6545cc",tooltip="Valida el formulario antes de crear la cita."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.NuevaCitaViewModel.\lCrearCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#aec7cc27bd5deaf42c1574a4537cb245a",tooltip="Crea la nueva cita."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.NuevaCitaViewModel.\lNuevaCitaViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#a81e7ef5ac4f0270f4c0abde4425a4dfc",tooltip="Constructor."];
+}

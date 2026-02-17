@@ -1,0 +1,10 @@
+digraph "Gráfico de jerarquía de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="Testing.TestEmailCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_testing_1_1_test_email_cliente.html",tooltip="Clase de pruebas unitarias para validar el formato de emails de clientes."];
+}

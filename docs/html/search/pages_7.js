@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['datos_0',['Datos',['../index.html#autotoc_md40',1,'🗄️ Base de Datos'],['../index.html#autotoc_md29',1,'&lt;b&gt;2. Restaurar Base de Datos&lt;/b&gt;'],['../index.html#autotoc_md16',1,'&lt;b&gt;Acceso a Datos&lt;/b&gt;'],['../index.html#autotoc_md41',1,'&lt;b&gt;Esquema de Base de Datos&lt;/b&gt;']]],
+  ['datos_20mvvm_1',['&lt;b&gt;Flujo de Datos (MVVM)&lt;/b&gt;',['../index.html#autotoc_md22',1,'']]],
+  ['de_20abogados_20sistema_20de_20gestión_20integral_2',['⚖️ Despacho de Abogados - Sistema de Gestión Integral',['../index.html',1,'']]],
+  ['de_20actuaciones_3',['&lt;b&gt;Vista de Actuaciones&lt;/b&gt;',['../index.html#autotoc_md63',1,'']]],
+  ['de_20base_20de_20datos_4',['&lt;b&gt;Esquema de Base de Datos&lt;/b&gt;',['../index.html#autotoc_md41',1,'']]],
+  ['de_20citas_5',['de Citas',['../index.html#autotoc_md9',1,'📅 &lt;b&gt;Agenda de Citas&lt;/b&gt;'],['../index.html#autotoc_md60',1,'&lt;b&gt;Ventana Principal - Vista de Citas&lt;/b&gt;']]],
+  ['de_20clientes_6',['de Clientes',['../index.html#autotoc_md7',1,'🎯 &lt;b&gt;Gestión de Clientes&lt;/b&gt;'],['../index.html#autotoc_md61',1,'&lt;b&gt;Vista de Clientes&lt;/b&gt;']]],
+  ['de_20conexión_7',['&lt;b&gt;3. Configurar Cadena de Conexión&lt;/b&gt;',['../index.html#autotoc_md32',1,'']]],
+  ['de_20contenidos_8',['📋 Tabla de Contenidos',['../index.html#autotoc_md2',1,'']]],
+  ['de_20datos_9',['de Datos',['../index.html#autotoc_md40',1,'🗄️ Base de Datos'],['../index.html#autotoc_md29',1,'&lt;b&gt;2. Restaurar Base de Datos&lt;/b&gt;'],['../index.html#autotoc_md41',1,'&lt;b&gt;Esquema de Base de Datos&lt;/b&gt;']]],
+  ['de_20datos_20mvvm_10',['&lt;b&gt;Flujo de Datos (MVVM)&lt;/b&gt;',['../index.html#autotoc_md22',1,'']]],
+  ['de_20expedientes_11',['de Expedientes',['../index.html#autotoc_md8',1,'📁 &lt;b&gt;Gestión de Expedientes&lt;/b&gt;'],['../index.html#autotoc_md62',1,'&lt;b&gt;Vista de Expedientes&lt;/b&gt;']]],
+  ['de_20gestión_20integral_12',['⚖️ Despacho de Abogados - Sistema de Gestión Integral',['../index.html',1,'']]],
+  ['de_20informes_13',['de Informes',['../index.html#autotoc_md11',1,'📊 &lt;b&gt;Sistema de Informes&lt;/b&gt;'],['../index.html#autotoc_md65',1,'&lt;b&gt;Vista de Informes&lt;/b&gt;']]],
+  ['de_20integridad_14',['&lt;b&gt;Restricciones de Integridad&lt;/b&gt;',['../index.html#autotoc_md47',1,'']]],
+  ['de_20pantalla_15',['📸 Capturas de Pantalla',['../index.html#autotoc_md59',1,'']]],
+  ['de_20sql_20server_20si_20no_20lo_20tienes_16',['&lt;b&gt;Instalación de SQL Server (si no lo tienes)&lt;/b&gt;',['../index.html#autotoc_md25',1,'']]],
+  ['de_20testing_17',['de Testing',['../index.html#autotoc_md57',1,'&lt;b&gt;Configuración de Testing&lt;/b&gt;'],['../index.html#autotoc_md51',1,'&lt;b&gt;Estructura de Testing&lt;/b&gt;']]],
+  ['de_20tests_18',['&lt;b&gt;Cobertura de Tests&lt;/b&gt;',['../index.html#autotoc_md56',1,'']]],
+  ['del_20proyecto_19',['📖 Descripción del Proyecto',['../index.html#autotoc_md4',1,'']]],
+  ['descripción_20del_20proyecto_20',['📖 Descripción del Proyecto',['../index.html#autotoc_md4',1,'']]],
+  ['desde_20la_20terminal_21',['&lt;b&gt;Desde la terminal&lt;/b&gt;',['../index.html#autotoc_md54',1,'']]],
+  ['desde_20visual_20studio_22',['Desde Visual Studio',['../index.html#autotoc_md36',1,'&lt;b&gt;Desde Visual Studio&lt;/b&gt;'],['../index.html#autotoc_md53',1,'&lt;b&gt;Desde Visual Studio&lt;/b&gt;']]],
+  ['despacho_20de_20abogados_20sistema_20de_20gestión_20integral_23',['⚖️ Despacho de Abogados - Sistema de Gestión Integral',['../index.html',1,'']]],
+  ['diagrama_20entidad_20relación_24',['&lt;b&gt;Diagrama Entidad-Relación&lt;/b&gt;',['../index.html#autotoc_md48',1,'']]]
+];

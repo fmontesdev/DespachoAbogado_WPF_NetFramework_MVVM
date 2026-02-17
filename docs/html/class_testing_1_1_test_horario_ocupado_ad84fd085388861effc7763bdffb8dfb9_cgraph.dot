@@ -1,0 +1,28 @@
+digraph "Testing.TestHorarioOcupado.TestControlHorario_HorarioOcupado_SegundaCitaDenegada"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Testing.TestHorarioOcupado.\lTestControlHorario_HorarioOcupado\l_SegundaCitaDenegada",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Prueba de integración que verifica el control de horarios ocupados."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Services.CitaService.\lCrearCitaAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cita_service.html#a87341cc0c8565fa91b8ec335999d8a48",tooltip="Crea una nueva cita en la base de datos despuÃ©s de validar las reglas de negocio."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.Services.CitaService.\lObtenerHorariosDisponiblesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cita_service.html#a3ef6273420dd34276d1057fe82eb6d0c",tooltip="Obtiene los horarios disponibles para una fecha especÃ­fica Filtra los horarios ya ocupados por citas ..."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.Services.Cliente\lService.CrearClienteAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#a5c4a689ffeb98a3d5613203d2570e426",tooltip="Crea un nuevo cliente en la base de datos después de validar las reglas de negocio."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.Services.Cliente\lService.ValidarDniUnicoAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#acbdfb1bba0eee3dcba877d9a82e4db87",tooltip="Valida que el DNI sea único en la base de datos."];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.Services.Cliente\lService.ValidarEmailUnicoAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#a89a73de239a890531ee54e5984fb190a",tooltip="Valida que el Email sea único en la base de datos."];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.Services.CitaService.\lEliminarCitaAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cita_service.html#abf147fbdf92dd04d8bff13a2731e5eb5",tooltip="Elimina una cita de la base de datos."];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Services.Cliente\lService.EliminarClienteAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#aec2f2c6ce184be94232d01a96ebaf124",tooltip="Elimina un cliente de la base de datos si no tiene expedientes o citas asociadas."];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ViewModel.Services.CitaService.\lObtenerCitasAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cita_service.html#ab0758bf7a621559a356b44f951a1ac26",tooltip="Obtiene todas las citas de la base de datos."];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="ViewModel.Services.Cliente\lService.ObtenerClientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_cliente_service.html#adbe201e70bcc5387748307c7b9b2a81d",tooltip="Obtiene todos los clientes de la base de datos."];
+}

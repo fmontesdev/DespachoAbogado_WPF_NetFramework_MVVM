@@ -1,0 +1,23 @@
+digraph "ViewModel.ExpedienteViewModel.OnPropertyChanged"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.ExpedienteView\lModel.OnPropertyChanged",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ExpedienteView\lModel.AplicarFiltros",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a10e6a235e6bc0ff269935a9bfeebd4f9",tooltip="Aplica el filtro de búsqueda global sobre la lista completa de expedientes."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ExpedienteView\lModel.CargarExpedientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a2290d80b41117ad8955d930b64c1f9c4",tooltip="Carga la lista de expedientes desde la base de datos y actualiza la colección observable."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ExpedienteView\lModel.ConfirmarEliminarExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#ac5ef07afaa62d011b28b2aff8ef10a4d",tooltip="Confirma y ejecuta la eliminación del expediente de la base de datos."];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ExpedienteView\lModel.EditarExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#aa5d2da304bb26838643f8e28d2a9e3da",tooltip="Edita el expediente seleccionado con los datos de los campos, validando los datos y guardando los cam..."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.ExpedienteView\lModel.ExpedienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a3456cafc6c270df65e022f073f8806ee",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+  Node3 -> Node7 [id="edge6_Node000003_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.ExpedienteView\lModel.InicializarAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_expediente_view_model.html#a4aaadd38a0de06b13aabe9510b417c77",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona el primer expediente."];
+  Node7 -> Node6 [id="edge7_Node000007_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "ViewModel.Services.ExpedienteService.GenerarCodigoExpedienteAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.Services.Expediente\lService.GenerarCodigoExpedienteAsync",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Genera un código único para el expediente siguiendo el formato E + año(2 dígitos) + número secuencial (4 dígitos) Ejemp..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Services.Expediente\lService.CrearExpedienteAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_services_1_1_expediente_service.html#a020b7d2578f998bdb4dd8fd2768eacbe",tooltip="Crea un nuevo expediente en la base de datos después de validar las reglas de negocio."];
+}

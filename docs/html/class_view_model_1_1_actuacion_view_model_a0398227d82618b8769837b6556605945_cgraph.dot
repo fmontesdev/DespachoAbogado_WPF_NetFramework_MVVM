@@ -1,0 +1,18 @@
+digraph "ViewModel.ActuacionViewModel.AplicarFiltros"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.ActuacionViewModel.\lAplicarFiltros",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Aplica el filtro de búsqueda global sobre la lista completa de actuaciones."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.Mappers.EstadoActuacion\lMapper.DeBDaUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_estado_actuacion_mapper.html#af076515839b1c23d8478b65a5d4f038e",tooltip="Convierte un valor de estado de actuación de la BD a su representación formateada para la UI."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.Mappers.TipoActuacion\lMapper.DeBDaUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_tipo_actuacion_mapper.html#ab31cb35588038ff849caade57176144b",tooltip="Convierte un valor de tipo de actuación de la BD a su representación formateada para la UI."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ActuacionViewModel.\lOnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#a7a5bd23498b15861ced88580d55434ab",tooltip="Método auxiliar para invocar el evento PropertyChanged."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ActuacionViewModel.\lSeleccionarPrimero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_actuacion_view_model.html#aab1ecaa151b0011e7f0d0cdfd8153416",tooltip="Selecciona la primera actuación de la lista."];
+}

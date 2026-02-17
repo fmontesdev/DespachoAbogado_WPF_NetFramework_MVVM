@@ -1,0 +1,14 @@
+digraph "ViewModel.NuevaCitaViewModel.FiltrarExpedientes"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.NuevaCitaViewModel.\lFiltrarExpedientes",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Filtra la lista de expedientes NO cerrados según el texto de búsqueda (solo por código) Solo funciona..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.NuevaCitaViewModel.\lFiltrarExpedientesPorCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#a8858d76243ea1eb78430dc0377e14857",tooltip="Filtra y carga los expedientes del cliente seleccionado."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.NuevaCitaViewModel.\lOnPropertyChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nueva_cita_view_model.html#aea77dbb6f0a275c1abc76bad7595a19c",tooltip=" "];
+}

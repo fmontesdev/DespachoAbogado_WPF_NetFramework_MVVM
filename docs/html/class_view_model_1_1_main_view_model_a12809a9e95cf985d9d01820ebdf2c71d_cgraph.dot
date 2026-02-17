@@ -1,0 +1,22 @@
+digraph "ViewModel.MainViewModel.MainViewModel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.MainViewModel.\lMainViewModel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor que inicializa todos los comandos de navegación."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.MainViewModel.\lMostrarActuaciones",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#a80a567a632e29e4efbc4e0b7b59e016d",tooltip="Cambia a la vista de actuaciones."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.MainViewModel.\lMostrarCitas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#ad38d7305591b85a2e8ef970c42b16378",tooltip="Cambia a la vista de citas."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.MainViewModel.\lMostrarClientes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#ac9a8b9806e8dd4ce9e6d5e06f8a78648",tooltip="Cambia a la vista de clientes."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.MainViewModel.\lMostrarExpedientes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#ae0452c3d6dc01f831f6d1541c8c7190b",tooltip="Cambia a la vista de expedientes."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.MainViewModel.\lMostrarInformes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#af0dc9a9125735217040704ada0107af0",tooltip="Cambia a la vista de informes."];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.MainViewModel.\lSalir",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#a45cd2296e92a7026e34fcda29d11f265",tooltip="Solicita cerrar la aplicación."];
+}

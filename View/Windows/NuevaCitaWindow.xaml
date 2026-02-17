@@ -1,0 +1,307 @@
+﻿<Window x:Class="View.Windows.NuevaCitaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Nueva Cita"
+        Width="600"
+        Height="459"
+        Background="#FFF0F0F0"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+
+        <Style x:Key="FieldIcon" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#1E3A52"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="PlaceholderText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#AAAAAA"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Padding" Value="9,5,0,0"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+
+        <Style x:Key="InputTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="#FFC0D2E3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="InputComboBox" TargetType="ComboBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="#FFC0D2E3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="InputDatePicker" TargetType="DatePicker">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="#FFC0D2E3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="ActionButton" TargetType="Button">
+            <Setter Property="Width" Value="110"/>
+            <Setter Property="Height" Value="33"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border x:Name="baseBorder"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="10"
+                                    Padding="{TemplateBinding Padding}"/>
+                            <Border x:Name="overlayBorder"
+                                    Background="Transparent"
+                                    CornerRadius="10"
+                                    Padding="{TemplateBinding Padding}">
+                                <ContentPresenter HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextBlock.Foreground="{TemplateBinding Foreground}"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="overlayBorder" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="Black" Opacity="0.07"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="overlayBorder" Property="Background">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="Black" Opacity="0.14"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="#1E3A52"
+                Padding="10"
+                BorderBrush="#E0E0E0"
+                BorderThickness="0,0,0,1">
+            <TextBlock Text="Crear Cita"
+                       Foreground="White"
+                       FontSize="21"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="18">
+            <Border Background="#FFE7EFF6"
+                    CornerRadius="11"
+                    Padding="16,11,16,16"
+                    BorderBrush="#FFC0D2E3"
+                    BorderThickness="1">
+
+                <StackPanel>
+                    <TextBlock Text="Datos de la Cita"
+                               FontSize="12"
+                               Foreground="#7A7A7A"
+                               Margin="2,0,0,8"/>
+
+                    <!-- FILA 1: Cliente + Expediente -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="1.9*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Cliente -->
+                        <TextBlock Text="👤"
+                                   Grid.Column="0"
+                                   Style="{StaticResource FieldIcon}"
+                                   FontSize="16"
+                                   Margin="2,0,8,0"/>
+                        <Grid Grid.Column="1">
+                            <ComboBox x:Name="cbCliente"
+                                      ItemsSource="{Binding Clientes}"
+                                      SelectedItem="{Binding ClienteSeleccionado}"
+                                      DisplayMemberPath="NombreCompletoConDni"
+                                      Style="{StaticResource InputComboBox}"
+                                      IsEditable="True"
+                                      IsTextSearchEnabled="False"
+                                      SelectionChanged="CbCliente_SelectionChanged"
+                                      PreviewMouseDown="CbCliente_PreviewMouseDown"
+                                      KeyUp="CbCliente_KeyUp"/>
+                            <TextBlock x:Name="placeholderCliente"
+                                       Text="Selecciona un cliente"
+                                       Style="{StaticResource PlaceholderText}"/>
+                        </Grid>
+
+                        <!-- Expediente -->
+                        <TextBlock Text="📁"
+                                   Grid.Column="3"
+                                   Style="{StaticResource FieldIcon}"
+                                   FontSize="16"
+                                   Margin="2,0,8,0"/>
+                        <Grid Grid.Column="4">
+                            <ComboBox x:Name="cbExpediente"
+                                      ItemsSource="{Binding Expedientes}"
+                                      SelectedItem="{Binding ExpedienteSeleccionado}"
+                                      DisplayMemberPath="Codigo"
+                                      Style="{StaticResource InputComboBox}"
+                                      IsEditable="True"
+                                      IsTextSearchEnabled="False"
+                                      IsEnabled="{Binding ExpedientesHabilitado}"
+                                      SelectionChanged="CbExpediente_SelectionChanged"
+                                      PreviewMouseDown="CbExpediente_PreviewMouseDown"
+                                      KeyUp="CbExpediente_KeyUp"/>
+                            <!-- Placeholder dinámico -->
+                            <TextBlock x:Name="placeholderExpediente"
+                                       Text="{Binding PlaceholderExpediente}"
+                                       Style="{StaticResource PlaceholderText}"/>
+                        </Grid>
+                    </Grid>
+
+                    <!-- FILA 2: Fecha + Horario -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="12"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Fecha -->
+                        <TextBlock Text="📅"
+                                   Grid.Column="0"
+                                   Style="{StaticResource FieldIcon}"
+                                   FontSize="16"
+                                   Margin="2,0,8,0"/>
+                        <DatePicker Grid.Column="1"
+                                    SelectedDate="{Binding Fecha, UpdateSourceTrigger=PropertyChanged}"
+                                    DisplayDateStart="{x:Static sys:DateTime.Now}"
+                                    CalendarOpened="DatePicker_CalendarOpened"
+                                    Style="{StaticResource InputDatePicker}"/>
+
+                        <!-- Horario -->
+                        <TextBlock Text="⏰"
+                                   Grid.Column="3"
+                                   Style="{StaticResource FieldIcon}"
+                                   FontSize="16"
+                                   Margin="2,0,8,0"/>
+                        <ComboBox Grid.Column="4"
+                                  ItemsSource="{Binding HorariosDisponibles}"
+                                  SelectedItem="{Binding Horario, UpdateSourceTrigger=PropertyChanged}"
+                                  Style="{StaticResource InputComboBox}"/>
+                    </Grid>
+
+                    <!-- FILA 3: Modalidad -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="220"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="💻"
+                                   Grid.Column="0"
+                                   Style="{StaticResource FieldIcon}"
+                                   FontSize="16"
+                                   Margin="2,0,8,0"/>
+                        <ComboBox Grid.Column="1"
+                                  ItemsSource="{Binding ModalidadesDisponibles}"
+                                  SelectedValue="{Binding Modalidad, UpdateSourceTrigger=PropertyChanged}"
+                                  SelectedValuePath="Key"
+                                  DisplayMemberPath="Value"
+                                  Style="{StaticResource InputComboBox}"/>
+                    </Grid>
+
+                    <!-- FILA 4: Motivo -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="📝"
+                                   Grid.Column="0"
+                                   Style="{StaticResource FieldIcon}"
+                                   FontSize="16"
+                                   Margin="2,0,8,0"
+                                   VerticalAlignment="Top"/>
+                        <Grid Grid.Column="1">
+                            <TextBox x:Name="txtMotivo"
+                                     Text="{Binding Motivo, UpdateSourceTrigger=PropertyChanged}"
+                                     Background="White"
+                                     Height="80"
+                                     Padding="8,4"
+                                     FontSize="13"
+                                     BorderBrush="#FFC0D2E3"
+                                     BorderThickness="1"
+                                     TextWrapping="Wrap"
+                                     AcceptsReturn="True"
+                                     VerticalScrollBarVisibility="Auto"
+                                     MaxLength="500"
+                                     TextChanged="TextBox_TextChanged"/>
+                            <TextBlock x:Name="placeholderMotivo"
+                                       Text="Motivo de la cita (opcional)"
+                                       Style="{StaticResource PlaceholderText}"
+                                       Padding="9,8,0,0"/>
+                        </Grid>
+                    </Grid>
+
+                    <Border Background="#FFFFE0E0"
+                            BorderBrush="#FFFF6B6B"
+                            BorderThickness="1"
+                            CornerRadius="5"
+                            Padding="8,6"
+                            Margin="0,0,0,10"
+                            Visibility="{Binding HasError, Converter={StaticResource BoolToVisibilityConverter}}">
+                        <TextBlock Text="{Binding ErrorMessage}"
+                                   Foreground="#FFD32F2F"
+                                   FontSize="12"
+                                   TextWrapping="Wrap"/>
+                    </Border>
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,5,0,0">
+                        <Button Content="➕ Crear"
+                                Command="{Binding CrearCommand}"
+                                Style="{StaticResource ActionButton}"
+                                Background="#6AAE6A"
+                                Margin="0,0,10,0"/>
+                        <Button Content="❌ Cancelar"
+                                Command="{Binding CancelarCommand}"
+                                Style="{StaticResource ActionButton}"
+                                Background="#F5C469"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

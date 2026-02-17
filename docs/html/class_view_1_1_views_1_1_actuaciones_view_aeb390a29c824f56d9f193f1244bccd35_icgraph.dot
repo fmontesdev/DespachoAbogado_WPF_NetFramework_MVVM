@@ -1,0 +1,16 @@
+digraph "View.Views.ActuacionesView.ObtenerColorPorEstado"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="View.Views.ActuacionesView.\lObtenerColorPorEstado",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Obtiene el color de fondo correspondiente al estado de la actuación."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.Views.ActuacionesView.\lActualizarColorEstado",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_actuaciones_view.html#ae5dbbbe46e50be0ca4aa1f36a3641438",tooltip="Actualiza el color de fondo del ComboBox de Estado según el valor seleccionado."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="View.Views.ActuacionesView.\lCbEstado_Loaded",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_actuaciones_view.html#a74010351639a1ed138efc4a887e74769",tooltip="Inicializa el color de fondo del ComboBox de Estado al cargar."];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="View.Views.ActuacionesView.\lCbEstado_SelectionChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_views_1_1_actuaciones_view.html#aa6dea5af7917219ffa5c6428736b543d",tooltip="Aplica el color de fondo al ComboBox de Estado según su valor."];
+}

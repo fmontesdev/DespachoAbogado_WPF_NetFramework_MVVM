@@ -1,0 +1,20 @@
+digraph "Model.DataSets.dsActuacionesPendientes.Clone"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Model.DataSets.dsActuaciones\lPendientes.Clone",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Model.DataSets.dsActuaciones\lPendientes.dsActuacionesPendientes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#ab004f0805187ba752804b721bb2b774d",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Model.DataSets.dsActuaciones\lPendientes.InitClass",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a5976fabf8f8ebece9fcdbd88a13b8661",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Model.DataSets.dsActuaciones\lPendientes.SchemaChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#ab8867ceb20f89411360781a20922f86c",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Model.DataSets.dsActuaciones\lPendientes.InitVars",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a3696c3055bacb21214f2ca148afd3ce5",tooltip=" "];
+  Node5 -> Node5 [id="edge5_Node000005_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge6_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+}

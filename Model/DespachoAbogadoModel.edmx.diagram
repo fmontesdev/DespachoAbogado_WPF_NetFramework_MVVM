@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2f35218fd61243a6923560aa7cf672b0" Name="Diagram1" ZoomLevel="115">
+        <EntityTypeShape EntityType="DespachoAbogadoModel.Actuacion" Width="1.5" PointX="6.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DespachoAbogadoModel.Cita" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DespachoAbogadoModel.Cliente" Width="1.5" PointX="1.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DespachoAbogadoModel.Expediente" Width="1.5" PointX="4" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="DespachoAbogadoModel.FK_Actuacion_Expediente" ManuallyRouted="false" />
+        <AssociationConnector Association="DespachoAbogadoModel.FK_Cita_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="DespachoAbogadoModel.FK_Cita_Expediente" ManuallyRouted="false" />
+        <AssociationConnector Association="DespachoAbogadoModel.FK_Expediente_Cliente" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

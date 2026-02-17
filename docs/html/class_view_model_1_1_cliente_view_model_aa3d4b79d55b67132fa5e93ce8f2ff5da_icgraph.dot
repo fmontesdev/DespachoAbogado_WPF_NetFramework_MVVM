@@ -1,0 +1,14 @@
+digraph "ViewModel.ClienteViewModel.MantieneSeleccion"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.ClienteViewModel.\lMantieneSeleccion",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Mantiene la selección del cliente en el índice especificado."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ClienteViewModel.\lEditarCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a01cb34de101b2eec24861090d75f8ac9",tooltip="Edita el cliente seleccionado con los datos de los TextBox, validando los datos y guardando los cambi..."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ClienteViewModel.\lClienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a526c17efe2cf6502ece736de0814c2ef",tooltip="Constructor que inicializa el servicio, comandos y carga los datos iniciales."];
+}

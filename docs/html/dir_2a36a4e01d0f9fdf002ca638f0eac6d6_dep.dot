@@ -1,0 +1,13 @@
+digraph "View/Windows"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_f2ee84e8e3a17eaa7015d788fa443c27 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="View", fontname=Arial,fontsize=10 style="filled,dashed", URL="dir_f2ee84e8e3a17eaa7015d788fa443c27.html",tooltip=""]
+  dir_2a36a4e01d0f9fdf002ca638f0eac6d6 [label="Windows", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_2a36a4e01d0f9fdf002ca638f0eac6d6.html",tooltip=""];
+  }
+}

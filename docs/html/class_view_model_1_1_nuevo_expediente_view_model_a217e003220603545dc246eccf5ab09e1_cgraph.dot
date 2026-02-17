@@ -1,0 +1,26 @@
+digraph "ViewModel.NuevoExpedienteViewModel.NuevoExpedienteViewModel"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.NuevoExpediente\lViewModel.NuevoExpedienteViewModel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.NuevoExpediente\lViewModel.Cancelar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#a48b7051b562c9a04a39607e974e339ab",tooltip="Cancela y cierra la ventana."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.NuevoExpediente\lViewModel.CargarClientesAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#a6a05639763d2a824751f7383c6d6eaeb",tooltip="Carga la lista de clientes desde la base de datos."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.NuevoExpediente\lViewModel.CrearExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#a1d497d3b8122bfa250b01dcba09ad981",tooltip="Crea el nuevo expediente."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.NuevoExpediente\lViewModel.ValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#ab981439aaf4afdb9c4632a2a8b07a74e",tooltip="Valida el formulario antes de crear el expediente."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.Validadores.Expediente\lValidador.ValidarNuevoExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_expediente_validador.html#acb9a1f42acd42ed4ff60a3846f2c9e1f",tooltip="Valida todos los campos para crear un nuevo expediente."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.Validadores.Expediente\lValidador.ValidarCamposComunesExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_expediente_validador.html#acbfcf4791381f3b4e08cd20db42885fd",tooltip="Valida los campos comunes de un expediente (título, descripción, jurisdicción y órgano)."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Validadores.Expediente\lValidador.ValidarTitulo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_expediente_validador.html#a6879ae8d4c594213934c95ab3a9837f7",tooltip="Valida el título del expediente."];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="Model.Mappers.Jurisdiccion\lMapper.ObtenerTodas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model_1_1_mappers_1_1_jurisdiccion_mapper.html#a43a344be985592178786b9650ab88c13",tooltip="Obtiene todas las jurisdicciones disponibles para UI."];
+}

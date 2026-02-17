@@ -1,0 +1,24 @@
+digraph "ViewModel.Validadores.ClienteValidador.ValidarCliente"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ViewModel.Validadores.Cliente\lValidador.ValidarCliente",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Valida todos los campos de un cliente y devuelve el primer error encontrado."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.Validadores.Cliente\lValidador.ValidarApellidos",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#ad0230b9b1de40437f68342817c06a901",tooltip="Valida los apellidos del cliente."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.Validadores.Cliente\lValidador.ValidarDireccion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#ab6f4db4ec11cb6f704a18f8a6ccde28e",tooltip="Valida la dirección del cliente (opcional, no puede ser solo números)."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.Validadores.Cliente\lValidador.ValidarDni",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#a27d3af77eea531b6ec0297f796197934",tooltip="Valida el DNI del cliente (8 dígitos seguidos de una letra)."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.Validadores.Cliente\lValidador.ValidarEmail",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#ab6bebe6fd3fb72b24da109642a4e7686",tooltip="Valida el email del cliente."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.Validadores.Cliente\lValidador.ValidarNombre",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#abf12bf9ebc55c05db8c61df21e408265",tooltip="Valida el nombre del cliente."];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ViewModel.Validadores.Cliente\lValidador.ValidarPoblacion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#a0e598de32867b4e4257940b7ff73735e",tooltip="Valida la población del cliente."];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ViewModel.Validadores.Cliente\lValidador.ValidarTelefono",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_validadores_1_1_cliente_validador.html#aa36c9d0fd461582644433bf08e08e9d3",tooltip="Valida el teléfono del cliente (opcional, 9 dígitos empezando por 6, 7, 8 o 9)."];
+}

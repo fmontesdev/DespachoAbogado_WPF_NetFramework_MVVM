@@ -1,0 +1,16 @@
+digraph "ViewModel.Validadores.ExpedienteValidador.ValidarNuevoExpediente"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.Validadores.Expediente\lValidador.ValidarNuevoExpediente",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Valida todos los campos para crear un nuevo expediente."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.NuevoExpediente\lViewModel.ValidarFormulario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#ab981439aaf4afdb9c4632a2a8b07a74e",tooltip="Valida el formulario antes de crear el expediente."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.NuevoExpediente\lViewModel.CrearExpediente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#a1d497d3b8122bfa250b01dcba09ad981",tooltip="Crea el nuevo expediente."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.NuevoExpediente\lViewModel.NuevoExpedienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_nuevo_expediente_view_model.html#a217e003220603545dc246eccf5ab09e1",tooltip="Constructor."];
+}

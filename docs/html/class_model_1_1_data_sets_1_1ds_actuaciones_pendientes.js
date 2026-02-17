@@ -1,0 +1,27 @@
+var class_model_1_1_data_sets_1_1ds_actuaciones_pendientes =
+[
+    [ "ActuacionesDataTable", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_data_table.html", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_data_table" ],
+    [ "ActuacionesRow", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_row.html", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_row" ],
+    [ "ActuacionesRowChangeEvent", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_row_change_event.html", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes_1_1_actuaciones_row_change_event" ],
+    [ "dsActuacionesPendientes", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#ab004f0805187ba752804b721bb2b774d", null ],
+    [ "dsActuacionesPendientes", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#ab3b215259fadf2217c5f0158bb6c57f4", null ],
+    [ "ActuacionesRowChangeEventHandler", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#ac7f933aace52df47d3f4ddc93801d3ce", null ],
+    [ "Clone", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a4f64a1f2ad64da84440de02a4d8ce4fc", null ],
+    [ "GetSchemaSerializable", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#aa3179c277a445db378740d251d572b6a", null ],
+    [ "GetTypedDataSetSchema", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a2eee20be2b4998a4eeb53c22d85dd9b0", null ],
+    [ "InitClass", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a5976fabf8f8ebece9fcdbd88a13b8661", null ],
+    [ "InitializeDerivedDataSet", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a585c76543236d57f7aeffb075f2a9f30", null ],
+    [ "InitVars", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a3696c3055bacb21214f2ca148afd3ce5", null ],
+    [ "InitVars", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a0ab7b2b05c078f7d678745250c3bada5", null ],
+    [ "ReadXmlSerializable", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a15c3089837ad0e87ccaf7330693d3198", null ],
+    [ "SchemaChanged", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#ab8867ceb20f89411360781a20922f86c", null ],
+    [ "ShouldSerializeActuaciones", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a54d64f444364bf29543526acdc81302b", null ],
+    [ "ShouldSerializeRelations", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a20276d4f735bc94be68f929871f18b37", null ],
+    [ "ShouldSerializeTables", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#aadfc5e0c5fd743c87c63b37d6a48d9ab", null ],
+    [ "_schemaSerializationMode", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#aae5742742c88c87c5ea158b108ca8835", null ],
+    [ "tableActuaciones", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a84a91fe3c2a17568a9e65f790da62acb", null ],
+    [ "Actuaciones", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a1dc1aa1b1733972e08e13da742d60c04", null ],
+    [ "Relations", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a65d4da2a819b93b4b72372dcbc0cbd93", null ],
+    [ "SchemaSerializationMode", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a3e60b0d538232934da08be6e194b6c32", null ],
+    [ "Tables", "class_model_1_1_data_sets_1_1ds_actuaciones_pendientes.html#a6cd02eb930c71ad90db7128147c4c432", null ]
+];

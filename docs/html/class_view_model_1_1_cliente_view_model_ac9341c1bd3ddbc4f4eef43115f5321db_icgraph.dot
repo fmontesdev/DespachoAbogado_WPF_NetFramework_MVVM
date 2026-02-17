@@ -1,0 +1,21 @@
+digraph "ViewModel.ClienteViewModel.SeleccionarPrimero"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.ClienteViewModel.\lSeleccionarPrimero",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Selecciona el primer cliente de la lista."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.ClienteViewModel.\lAplicarFiltros",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a17740ff1569c4f30e818da8c6ceb7df8",tooltip="Aplica el filtro de búsqueda global sobre la lista completa de clientes."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.ClienteViewModel.\lInicializarAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a48927d343c7e6a055818122978a4fd06",tooltip="Inicializa la carga de datos de forma asíncrona y selecciona el primer cliente."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ViewModel.ClienteViewModel.\lClienteViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a526c17efe2cf6502ece736de0814c2ef",tooltip="Constructor que inicializa el servicio, comandos y carga los datos iniciales."];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ViewModel.ClienteViewModel.\lMantieneSeleccion",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#aa3d4b79d55b67132fa5e93ce8f2ff5da",tooltip="Mantiene la selección del cliente en el índice especificado."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ViewModel.ClienteViewModel.\lEditarCliente",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cliente_view_model.html#a01cb34de101b2eec24861090d75f8ac9",tooltip="Edita el cliente seleccionado con los datos de los TextBox, validando los datos y guardando los cambi..."];
+  Node6 -> Node4 [id="edge6_Node000006_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

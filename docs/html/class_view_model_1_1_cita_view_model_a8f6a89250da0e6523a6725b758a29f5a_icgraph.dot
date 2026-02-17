@@ -1,0 +1,14 @@
+digraph "ViewModel.CitaViewModel.MantieneSeleccion"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.CitaViewModel.\lMantieneSeleccion",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Mantiene la selección de la cita en el índice especificado."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.CitaViewModel.\lEditarCita",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#a89f5e958916a3b32e9e514683d8cfeb8",tooltip="Edita la cita seleccionada con los datos de los campos, validando los datos y guardando los cambios e..."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.CitaViewModel.\lCitaViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_cita_view_model.html#aed1a5302634a916eda8cc1e8dd456d95",tooltip="Constructor que inicializa los servicios, comandos y carga los datos iniciales."];
+}

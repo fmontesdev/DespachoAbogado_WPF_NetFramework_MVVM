@@ -1,0 +1,14 @@
+digraph "ViewModel.MainViewModel.MostrarCitas"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ViewModel.MainViewModel.\lMostrarCitas",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cambia a la vista de citas."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ViewModel.MainViewModel.\lInicializarVistaInicial",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#ac4d9ca735e3fde0fe4ed3bcf7e0e1654",tooltip="Inicializa la vista por defecto mostrando las citas."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ViewModel.MainViewModel.\lMainViewModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_model_1_1_main_view_model.html#a12809a9e95cf985d9d01820ebdf2c71d",tooltip="Constructor que inicializa todos los comandos de navegación."];
+}

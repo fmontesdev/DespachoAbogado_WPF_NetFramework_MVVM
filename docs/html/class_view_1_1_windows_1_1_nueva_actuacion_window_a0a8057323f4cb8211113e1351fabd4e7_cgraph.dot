@@ -1,0 +1,12 @@
+digraph "View.Windows.NuevaActuacionWindow.CbExpediente_SelectionChanged"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Arial,fontsize=10,labelfontname=Arial,labelfontsize=10];
+  node [fontname=Arial,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="View.Windows.NuevaActuacion\lWindow.CbExpediente_SelectionChanged",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Maneja el cambio de selección en el ComboBox de Expediente."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="View.Windows.NuevaActuacion\lWindow.ActualizarVisibilidadPlaceholder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_view_1_1_windows_1_1_nueva_actuacion_window.html#a6f0b8e160bc3fcfe4fd8505edd23b4e3",tooltip="Actualiza la visibilidad del placeholder según el estado del TextBox."];
+}
