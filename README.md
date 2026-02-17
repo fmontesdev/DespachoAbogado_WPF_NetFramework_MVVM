@@ -1,4 +1,4 @@
-﻿# ⚖️ Despacho de Abogados - Sistema de Gestión Integral
+﻿# ⚖️ Despacho de Abogados
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 ![MSTest](https://img.shields.io/badge/MSTest-Testing-68217A?style=for-the-badge)
 
 **Sistema integral de gestión para despachos de abogados**  
-Gestión de clientes, expedientes, citas y actuaciones judiciales
+Gestión de citas, clientes, expedientes, y actuaciones judiciales
 
 </div>
 
@@ -48,6 +48,14 @@ Documentación técnica completa del código fuente, generada automáticamente c
 **➡️ <a href="https://paco-montes.gitbook.io/despacho-abogado/" target="_blank" rel="noopener noreferrer">Documentación Completa en GitBook</a>**
 
 Accede a la documentación completa del proyecto, incluyendo: documentación técnica, y manual de usuario en formato web interactivo.
+
+
+## 📖 Mockups de las vistas principales con Figma
+
+**➡️ <a href="[https://paco-montes.gitbook.io/despacho-abogado/](https://www.figma.com/design/JeaA8JNEAdaTzTBalYfUC2/DespachoAbogado?node-id=0-1&m=dev&t=AzycG49jFNySJRz9-1)" target="_blank" rel="noopener noreferrer">Mockups en Figma</a>**
+
+Accede a los mockups (modo edición) de las vistas principales desarrollado en Figma.
+
 
 ## 📖 Descripción del Proyecto
 
