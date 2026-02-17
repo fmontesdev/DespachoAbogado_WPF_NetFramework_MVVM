@@ -19,6 +19,7 @@ Gestión de citas, clientes, expedientes, y actuaciones judiciales
 
 - [Documentación Doxygen](#-documentación-del-código-(doxygen))
 - [Documentación Técnica y Manual](#-documentación-técnica-y-manual-de-usuario)
+- [Mockups](#-mockups-de-las-vistas-principales-con-figma)
 - [Descripción](#-descripción-del-proyecto)
 - [Características](#-características-principales)
 - [Tecnologías](#️-tecnologías-usadas)
@@ -52,7 +53,7 @@ Accede a la documentación completa del proyecto, incluyendo: documentación té
 
 ## 📖 Mockups de las vistas principales con Figma
 
-**➡️ <a href="[https://paco-montes.gitbook.io/despacho-abogado/](https://www.figma.com/design/JeaA8JNEAdaTzTBalYfUC2/DespachoAbogado?node-id=0-1&m=dev&t=AzycG49jFNySJRz9-1)" target="_blank" rel="noopener noreferrer">Mockups en Figma</a>**
+**➡️ <a href="https://www.figma.com/design/JeaA8JNEAdaTzTBalYfUC2/DespachoAbogado?node-id=0-1&m=dev&t=AzycG49jFNySJRz9-1" target="_blank" rel="noopener noreferrer">Mockups en Figma</a>**
 
 Accede a los mockups (modo edición) de las vistas principales desarrollado en Figma.
 
