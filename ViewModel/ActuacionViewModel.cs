@@ -241,11 +241,12 @@ namespace ViewModel
         /// </summary>
         public async void InicializarAsync()
         {
-            // Evitar recargas innecesarias si ya se ha inicializado antes
-            // Lo implementamos para que el método FiltrarPorExpediente no se ejecute antes de que se hayan cargado los datos
+            // Recargar datos desde la base de datos
+            await CargarActuacionesAsync();
+            
+            // Cargar expedientes solo la primera vez (para evitar recargas innecesarias)
             if (!_inicializado)
             {
-                await CargarActuacionesAsync();
                 await CargarExpedientesAsync();
                 _inicializado = true;
             }
